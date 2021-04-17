@@ -30,9 +30,13 @@ body {
   margin: 0 auto;
 }
 
+:root {
+  --violet: #BB12BE;
+}
+
 /* header */
 .header__top {
-  background-color: #BB12BE;
+  background-color: var(--violet);
   color: #fff;
 }
 
@@ -98,6 +102,63 @@ body {
   color: #fff;
 }
 
+.header__list a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: black;
+  fill: black;
 
+}
 
+.items__cargo {
+  margin-left: 50px;
+  padding-left: 40px;
+  background: url('../img/box_menu.svg') no-repeat;
+}
 
+.iten__transport {
+  background: url('../img/truck.svg') no-repeat;
+  padding-left: 35px;
+}
+
+.item__service {
+  background: url('../img/tools.svg') no-repeat;
+  padding-left: 30px;
+}
+
+.item__spare {
+  background: url('../img/settings.svg') no-repeat;
+  padding-left: 30px;
+}
+
+.item__droplet {
+  background: url('../img/droplet.svg') no-repeat;
+  padding-left: 30px;
+}
+
+.item__cafe {
+  background: url('../img/cafe.svg') no-repeat;
+  padding-left: 30px;
+}
+
+.item__auto {
+  background: url('../img/key.svg') no-repeat;
+  padding-left: 30px;
+}
+
+.favorites {
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 23px;
+  background: url('../img/favorit.svg') no-repeat;
+  fill: var(--violet);
+}
+
+.item__favorites {
+ display: flex;
+ align-items: center;
+}
