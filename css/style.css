@@ -38,6 +38,7 @@ body {
 
 :root {
   --violet: #BB12BE;
+  --purpur: #7570AE;
 }
 
 /* header */
@@ -119,25 +120,6 @@ body {
   border: none;
 }
 
-/* hero */
-.hero {
-  height: 680px;
-  width: 100%;
-  background: linear-gradient(99.78deg, rgba(0, 0, 0, 0.15) 14.18%, rgba(0, 0, 0, 0) 84.28%), url('../img/hero_bg.jpg') center center no-repeat;
-  padding-top: 1px;
-}
-
-.hero__title {
-  margin-top: 356px;
-  max-width: 857px;
-  font-weight: bold;
-  font-size: 66px;
-  line-height: 79px;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .header__list a {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -197,4 +179,89 @@ body {
 .item__favorites {
  display: flex;
  align-items: center;
+}
+
+
+/* hero */
+.hero {
+  height: 680px;
+  width: 100%;
+  background: linear-gradient(99.78deg, rgba(0, 0, 0, 0.15) 14.18%, rgba(0, 0, 0, 0) 84.28%), url('../img/hero_bg.jpg') center center no-repeat;
+  padding-top: 1px;
+}
+
+.hero__title {
+  margin-top: 356px;
+  max-width: 857px;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 79px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* container__menu */
+.container__menu {
+  background: #E5E5E5;
+  padding: 68px 0 55px;
+
+}
+
+.container__menu-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-box {
+  width: 170px;
+  height: 144px;
+  padding-top: 10px;
+  background-color: #fff;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #615BA3;
+}
+
+.menu-box__img {
+  width: 86px;
+  height: 86px;
+  fill: var(--purpur);
+}
+
+.add-cargo__bg {
+  background: url('../img/add-cargo.svg') center no-repeat;
+}
+
+.counter__bg {
+  background: url('../img/conter.svg') center no-repeat;
+}
+
+.add-service__bg {
+  background: url('../img/add-service.svg') center no-repeat;
+}
+
+.sale-avto__bg {
+  background: url('../img/sale-avto.svg') center no-repeat;
+}
+
+.distance__bg {
+  background: url('../img/distance.svg') center no-repeat;
+}
+
+.add-shop__bg {
+  background: url('../img/add-shop.svg') center no-repeat;
+}
+
+.menu-box__title {
+  width: 130px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
 }
