@@ -289,7 +289,7 @@ body {
   color: #333333;
 }
 
-.container__cargo-header {
+.container__header {
   max-width: 802px;
   display: flex;
   justify-content: space-between;
@@ -407,23 +407,26 @@ body {
   background: url('../img/user.png') left center no-repeat;
 }
 
-.cargo-box__contact {
+.box__contact {
   margin-left: 37px;
+  margin-right: 50px;
   font-weight: 700;
   font-size: 13px;
   line-height: 19px;
   color: #464275;
+  text-decoration-line: underline;
 }
 
-.cargo-box__date-travel {
-  margin-left: 60px;
+.box__date-travel {
+  margin-right: 15px;
   padding-left: 30px;
+  text-align: right;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   background: url('../img/clock.png') left center no-repeat;
 }
-.cargo-box__time-travel {
+.box__time-travel {
   margin-left: auto;
   margin-right: 22px;
   font-weight: 400;
@@ -649,4 +652,122 @@ body {
   border-radius: 4px;
   color: #BB12BE;
   text-align: center;
+}
+
+/* services */
+.services {
+  padding-top: 50px;
+  padding-bottom: 85px;
+  background-color: #fafafa;
+  background: url('../img/truck-bg.svg') right 80% no-repeat;
+}
+
+.services__content {
+  max-width: 802px;
+  margin-top: 46px;
+}
+
+.services__content:not(:first-child) {
+  margin-top: 25px;
+}
+
+.services__box {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  color: var(--black);
+}
+
+.box-top {
+  padding: 26px 22px 0 30px;
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-header__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.box-header__price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--darkviolet);
+}
+
+.box__text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.box__service {
+  display: flex;
+  margin-top: 30px;
+}
+
+.box__item {
+  margin-right: 13px;
+  margin-bottom: 20px;
+  padding: 4px 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  background: rgba(0, 166, 219, 0.1);
+  border-radius: 2px;
+  color: #045169;
+}
+
+.box__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 14px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.box__service-name {
+  padding-left: 25px;
+  background: url('../img/user.png') left center no-repeat;
+}
+
+.box__like {
+  margin-left: 25px;
+  padding-left: 15px;
+  background: url('../img/like_green.png') left center no-repeat;
+}
+
+.box__dislike {
+  padding-left: 15px;
+  background: url('../img/dizlike.svg') left center no-repeat;
+}
+
+.box__service-address {
+  width: 175px;
+  margin-left: 25px;
+  padding-left: 25px;
+  background: url('../img/marker2.png') left top no-repeat;
+  text-decoration-line: underline;
+}
+
+.box__contact-link {
+  margin: 0 34px;
+}
+
+.services__time-travel {
+  margin-right: 0;
+}
+
+.services__date-travel {
+  margin-left: auto;
+  margin-right: 0;
 }
