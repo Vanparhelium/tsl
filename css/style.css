@@ -525,13 +525,26 @@ body {
   z-index: -1;
 }
 
+.container__cargo-bg2 {
+  position: absolute;
+  width: 700px;
+  height: 1500px;
+  top: -750px;
+  right: 0;
+  background: url('../img/bg_circle.png') right top no-repeat;
+  transform: rotate(360deg);
+  z-index: -1;
+}
+
 /* advertising */
 .advertising {
+  position: relative;
   background: #E5E5E5;
   padding-top: 48px;
   padding-bottom: 70px;
   display: flex;
   align-items: center;
+  z-index: -1;
 }
 
 .baner940 {
@@ -544,6 +557,15 @@ body {
   text-align: center;
   background-color: var(--darkviolet);
   color: #fff;
+}
+
+.advertising__bg-circle {
+  position: absolute;
+  width: 900px;
+  height: 1050px;
+  background: url('../img/bg_circle2.png') left bottom no-repeat;
+  top: 70px;
+  z-index: -1;
 }
 
 /* transport */
