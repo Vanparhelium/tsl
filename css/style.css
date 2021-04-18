@@ -226,10 +226,13 @@ body {
 .favorites {
   display: inline-block;
   margin-right: 10px;
+  padding-top: 6px;
   width: 16px;
   height: 23px;
+  text-align: center;
   background: url('../img/favorit.svg') no-repeat;
   fill: var(--violet);
+  color: #fff;
 }
 
 .item__favorites {
@@ -577,12 +580,7 @@ body {
 }
 
 .transport-bg {
-  position: absolute;
-  height: 370px;
-  width: 500px;
-  right: 0;
-  bottom: 110px;
-  background: url('../img/truck-bg.svg') right no-repeat;
+  background: url(../img/truck-bg.svg) right 80% no-repeat;
 }
 
 /* top-sto */
