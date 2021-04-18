@@ -65,8 +65,9 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1180px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 :root {
@@ -85,9 +86,10 @@ body {
 }
 
 .header__row {
-  max-width: 1500px;
+  max-width: 1540px;
   height: 107px;
   margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -158,9 +160,10 @@ body {
 }
 
 .header__list {
-  max-width: 1500px;
+  max-width: 1540px;
   height: 57px;
   margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
