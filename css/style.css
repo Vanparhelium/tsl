@@ -121,10 +121,12 @@ body {
 
 .header__right {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .header__select {
-  width: 90px;
+  width: 80px;
   margin-right: 30px;
   color: #fff;
   background-color: var(--violet);
@@ -133,7 +135,7 @@ body {
 
 .select_marker {
   padding-left: 20px;
-  width: 110px;
+  width: 100px;
   background: url('../img/marker.svg') left center no-repeat;
 }
 
@@ -150,7 +152,7 @@ body {
   margin-right: 47px;
   font-size: 16px;
   line-height: 22px;
-  background: url('../img/lk.svg') no-repeat;
+  background: url('../img/lk.svg') left center no-repeat;
   fill: #fff;
   padding-left: 20px;
 }
