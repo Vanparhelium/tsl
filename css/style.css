@@ -39,6 +39,8 @@ body {
 :root {
   --violet: #BB12BE;
   --purpur: #7570AE;
+  --black: #333333;
+  --darkviolet: #87029C;
 }
 
 /* header */
@@ -128,7 +130,6 @@ body {
   text-transform: uppercase;
   color: black;
   fill: black;
-
 }
 
 .items__cargo {
@@ -264,4 +265,242 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
+}
+/* container__cargo */
+.container__cargo {
+  position: relative;
+  background-color: #fafafa;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  color: #333333;
+}
+
+.container__cargo-header {
+  max-width: 802px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.btn__all {
+  padding: 8px 10px;
+  color: var(--darkviolet);
+  border: 1px solid var(--darkviolet);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.container__cargo-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cargo__card {
+  max-width: 802px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.cargo__card:not(:first-child) {
+  margin-top: 30px;
+}
+
+.cargo-box__row {
+  display: flex;
+  align-items: center;
+}
+
+.cargo-box__row-header {
+  height: 68px;
+  padding-left: 25px;
+  color: var(--darkviolet);
+  background: rgba(0, 166, 219, 0.1);
+}
+
+.cargo-box__city {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.cargo-box__city-bg {
+  background: url('../img/truck.png') no-repeat;
+  padding-left: 60px;
+}
+
+.cargo-box__city-arrow {
+  background: url('../img/arrow-right.svg') no-repeat;
+  fill: var(--darkviolet);
+  padding-left: 35px;
+}
+
+.cargo-box__city {
+  margin-right: 10px;
+}
+
+.cargo-box__distance {
+  margin-left: 20px;
+  padding: 5px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  background: url('../img/map.svg') left center no-repeat;
+  padding-left: 30px;
+}
+
+.cargo-box__price {
+  margin-left: auto;
+  margin-right: 22px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.cargo-box__row-date {
+  height: 60px;
+  border-bottom: 1px solid #E0E0E0;
+  background: #FFFFFF;
+}
+
+.cargo-box__date {
+  margin-left: 25px;
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background: url('../img/calendar.svg') left center no-repeat;
+}
+
+.cargo-box__name {
+  margin-left: 30px;
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background: url('../img/user.png') left center no-repeat;
+}
+
+.cargo-box__contact {
+  margin-left: 37px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #464275;
+}
+
+.cargo-box__date-travel {
+  margin-left: 60px;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: url('../img/clock.png') left center no-repeat;
+}
+.cargo-box__time-travel {
+  margin-left: auto;
+  margin-right: 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cargo-box__row-description {
+  height: 102px;
+  margin: 25px 22px 0 25px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background: #FCFCFC;
+}
+
+.cargo-box__description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.cargo-box__description span {
+  font-weight: 400;
+  margin-left: 12px;
+  margin-right: 125px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.cargo-box__label {
+  width: 18px;
+  height: 25px;
+  background: url('../img/label.svg') right bottom no-repeat;
+  margin-left: auto;
+}
+
+.baner300 {
+  width: 300px;
+  height: 600px;
+  padding-top: 150px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: var(--darkviolet);
+}
+
+.container__cargo-bg {
+  position: absolute;
+  bottom: 0;
+  width: 612px;
+  height: 550px;
+  z-index: 1;
+  background: url('../img/cargo-bg.svg') no-repeat;
+}
+
+/* advertising */
+.advertising {
+  background: #E5E5E5;
+  padding-top: 48px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.baner940 {
+  width: 940px;
+  height: 200px;
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 88px;
+  text-align: center;
+  background-color: var(--darkviolet);
+  color: #fff;
+}
+
+/* transport */
+.transport__col {
+  max-width: 802px;
+}
+
+.transport-bg {
+  position: absolute;
+  height: 370px;
+  width: 500px;
+  right: 0;
+  bottom: 110px;
+  background: url('../img/truck-bg.svg') right no-repeat;
 }
