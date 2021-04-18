@@ -325,6 +325,7 @@ body {
   padding-top: 72px;
   padding-bottom: 72px;
   color: #333333;
+  z-index: -2;
 }
 
 .container__header {
@@ -363,7 +364,6 @@ body {
   max-width: 802px;
   border: 1px solid #E0E0E0;
   border-radius: 4px;
-  z-index: 2;
 }
 
 .cargo__card:not(:first-child) {
@@ -379,7 +379,7 @@ body {
   height: 68px;
   padding-left: 25px;
   color: var(--darkviolet);
-  background: rgba(0, 166, 219, 0.1);
+  background-color: #e1f2f7;
 }
 
 .cargo-box__city {
@@ -474,7 +474,7 @@ body {
 
 .cargo-box__row-description {
   height: 102px;
-  margin: 25px 22px 0 25px;
+  padding: 25px 22px 0 25px;
   flex-wrap: wrap;
   align-items: baseline;
   background-color: #FCFCFC;
@@ -521,8 +521,8 @@ body {
   bottom: 0;
   width: 612px;
   height: 550px;
-  z-index: 1;
   background: url('../img/cargo-bg.svg') no-repeat;
+  z-index: -1;
 }
 
 /* advertising */
