@@ -1154,16 +1154,16 @@ body {
 }
 
 @media (max-width: 900px) {
-
+  /* hero */
   .hero {
-    height: 620px;
+    height: 280px;
     background-position: 40%;
   }
 
   .hero__title {
-    margin-top: 320px;
-    font-size: 52px;
-    line-height: 68px;
+    margin-top: 125px;
+    font-size: 40px;
+    line-height: 53px;
   }
 
   .menu-box__row {
@@ -1172,6 +1172,10 @@ body {
   }
 
   /* container__cargo */
+  .container__cargo {
+    padding-top: 15px;
+  }
+
   .cargo-box__city {
     margin-right: 0;
     font-size: 17px;
@@ -1224,6 +1228,12 @@ body {
 
   .header__select {
     display: none;
+  }
+
+  .hero__title {
+    margin-top: 180px;
+    font-size: 28px;
+    line-height: 35px;
   }
 
   .menu-box__row {
@@ -1336,16 +1346,6 @@ body {
     display: none;
   }
 
-  /* hero */
-  .hero {
-    height: 380px;
-  }
-
-  .hero__title {
-    margin-top: 180px;
-    font-size: 28px;
-    line-height: 35px;
-  }
 
   /* container__menu */
   .container__menu {
