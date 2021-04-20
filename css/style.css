@@ -346,7 +346,7 @@ body {
   padding-top: 72px;
   padding-bottom: 72px;
   color: #333333;
-  z-index: -2;
+  background: url('../img/cargo-bg.svg') left bottom no-repeat, url('../img/bg_circle.png') right 175% no-repeat;
 }
 
 .container__header {
@@ -536,26 +536,6 @@ body {
   text-align: center;
   color: #FFFFFF;
   background-color: var(--darkviolet);
-}
-
-.container__cargo-bg {
-  position: absolute;
-  bottom: 0;
-  width: 612px;
-  height: 550px;
-  background: url('../img/cargo-bg.svg') no-repeat;
-  z-index: -1;
-}
-
-.container__cargo-bg2 {
-  position: absolute;
-  width: 700px;
-  height: 1500px;
-  top: -750px;
-  right: 0;
-  background: url('../img/bg_circle.png') right top no-repeat;
-  transform: rotate(360deg);
-  z-index: -1;
 }
 
 /* advertising */
@@ -1875,6 +1855,16 @@ body {
   background-size: cover;
 }
 
+/* ------------------------ service.html-style------------------------------------------ */
 
+.main__baner-service {
+  position: relative;
+  background:  url('../img/ellipse.png') center center no-repeat, url('../img/service_bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.services__bg {
+  background: url('../img/cargo-bg.svg') -9% center no-repeat, url('../img/truck-bg.svg') right bottom no-repeat;
+}
 
 
