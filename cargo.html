@@ -80,104 +80,120 @@
 
     <section class="container__cargo cargo-main__bg transport-bg">
       <div class="container">
-        <div class="container__cargo-box">
+        <div class="container__cargo-box container__cargo-box_column">
           <div class="cargo-box__col cargo-box__col-form">
             <form action="" class="filter__form">
               <h4 class="foorm__title">
                 Фильтр
               </h4>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Дата</legend>
-                <div class="form__block">
-                  <div class="form__text">c
-                    <input type="date" name="" id="" value="2022-04-21" class="form__date">
-                  </div>
-                  <div class="form__text">по
-                    <input type="date" name="" id="" value="2022-04-21" class="form__date">
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Откуда</legend>
-                <div class="form__block form__block_pading">
-                  <input type="text" name="" id="" value="Алматы" class="form__type-text">
-                  <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Куда</legend>
-                <div class="form__block form__block_pading">
-                  <input type="text" name="" id="" value="Алматы" class="form__type-text">
-                  <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Вес: тонна</legend>
-                <div class="form__block">
-                  <div class="form__text">от
-                    <input type="number" name="" id="" value="" placeholder="10 000" class="form__date">
-                  </div>
-                  <div class="form__text">до
-                    <input type="number" name="" id="" value="" placeholder="100 000" class="form__date">
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Объем: м<sub>3</sub></legend>
-                <div class="form__block">
-                  <div class="form__text">от
-                    <input type="number" name="" id="" value="" placeholder="10 000" class="form__date">
-                  </div>
-                  <div class="form__text">до
-                    <input type="number" name="" id="" value="" placeholder="100 000" class="form__date">
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Вид погрузки:</legend>
-                <div class="form__block-col">
-                  <div class="form__block form__block_row">
-                    <select name="" id="" class="form__select">
-                      <option value="">Задняя</option>
-                    </select>
-                    <div class="form-btn__dox form-btn__dox_first">
-                      <input type="button" value="+" class="form__btn-add">
+              <div class="filter__form_col">
+                <div class="filter__form_row">
+                  <fieldset class="form__fieldset form__block-size">
+                    <legend class="form__legend">Дата</legend>
+                    <div class="form__block">
+                      <div class="form__text">c
+                        <input type="date" name="" id="" value="2022-04-21" class="form__date">
+                      </div>
+                      <div class="form__text">по
+                        <input type="date" name="" id="" value="2022-04-21" class="form__date">
+                      </div>
                     </div>
-                  </div>
-                  <div class="form__block form__block_row">
-                    <select name="" id="" class="form__select">
-                      <option value="">Боковая</option>
-                    </select>
-                   <div class="form-btn__dox">
-                     <input type="button" value="+" class="form__btn-add">
+                  </fieldset>
+                  <div class="filter__form_row-form">
+                    <fieldset class="form__fieldset">
+                      <legend class="form__legend">Откуда</legend>
+                      <div class="form__block form__block_pading">
+                        <input type="text" name="" id="" value="Алматы" class="form__type-text">
+                        <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                    <legend class="form__legend">Куда</legend>
+                    <div class="form__block form__block_pading">
+                      <input type="text" name="" id="" value="Алматы" class="form__type-text">
+                      <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
                     </div>
-                  </div>
-                  <div class="form__block">
-                    <select name="" id="" class="form__select">
-                      <option value="">Верхняя</option>
-                    </select>
-                    <div class="form-btn__dox">
-                      <input type="button" value="+" class="form__btn-add">
-                    </div>
+                    </fieldset>
                   </div>
                 </div>
-              </fieldset>
-              <input type="submit" value="Применить" class="form__btn">
+                <div class="filter__form_row filter__form_row-adaptive">
+                  <div class="filter__form_col filter__form_col-form">
+                    <fieldset class="form__fieldset">
+                      <legend class="form__legend">Вес: тонна</legend>
+                      <div class="form__block">
+                        <div class="form__text">от
+                          <input type="number" name="" id="" value="" placeholder="10 000" class="form__date">
+                        </div>
+                        <div class="form__text">до
+                          <input type="number" name="" id="" value="" placeholder="100 000" class="form__date">
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                      <legend class="form__legend">Объем: м<sub>3</sub></legend>
+                      <div class="form__block">
+                        <div class="form__text">от
+                          <input type="number" name="" id="" value="" placeholder="10 000" class="form__date">
+                        </div>
+                        <div class="form__text">до
+                          <input type="number" name="" id="" value="" placeholder="100 000" class="form__date">
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="filter__form_col filter__form_col-form">
+                    <fieldset class="form__fieldset">
+                      <legend class="form__legend">Вид погрузки:</legend>
+                      <div class="form__block-col">
+                        <div class="form__block form__block_row">
+                          <select name="" id="" class="form__select">
+                            <option value="">Задняя</option>
+                          </select>
+                          <div class="form-btn__dox form-btn__dox_first">
+                            <input type="button" value="+" class="form__btn-add">
+                          </div>
+                        </div>
+                        <div class="form__block form__block_row">
+                          <select name="" id="" class="form__select">
+                            <option value="">Боковая</option>
+                          </select>
+                         <div class="form-btn__dox">
+                           <input type="button" value="+" class="form__btn-add">
+                          </div>
+                        </div>
+                        <div class="form__block">
+                          <select name="" id="" class="form__select">
+                            <option value="">Верхняя</option>
+                          </select>
+                          <div class="form-btn__dox">
+                            <input type="button" value="+" class="form__btn-add">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+                <input type="submit" value="Применить" class="form__btn">
             </form>
           </div>
           <div class="cargo-box__col">
             <div class="sorting">
               <div class="sorting__row">
-                <div class="sorting__total">Всего 450 грузов</div>
-                <div class="sorting__favorit">
-                  <span class="sorting__favorit-lable">2</span>
-                  Избранное
+                <div class="sorting__row-adaptive">
+                  <div class="sorting__total">Всего 450 грузов</div>
+                  <div class="sorting__favorit">
+                    <span class="sorting__favorit-lable">2</span>
+                    Избранное
+                  </div>
                 </div>
-                <div class="sorting__sort">Сортировка</div>
-                <select name="" id="" class="sorting__select">
-                  <option value="">Сначала новые</option>
-                </select>
-              </div>
+                <div class="sorting__row-adaptive">
+                  <div class="sorting__sort">Сортировка</div>
+                  <select name="" id="" class="sorting__select">
+                    <option value="">Сначала новые</option>
+                  </select>
+                </div>
+                </div>
             </div>
             <div class="sentence cargo-main__col">
               <div class="sentence__title">
