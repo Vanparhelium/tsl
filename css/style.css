@@ -540,13 +540,12 @@ body {
 
 /* advertising */
 .advertising {
-  position: relative;
-  background: #E5E5E5;
+  /* position: relative; */
   padding-top: 48px;
   padding-bottom: 70px;
   display: flex;
   align-items: center;
-  z-index: -1;
+  background: url('../img/bg_circle2.png') left 5% no-repeat, #E5E5E5;
 }
 
 .baner940 {
@@ -559,15 +558,6 @@ body {
   text-align: center;
   background-color: var(--darkviolet);
   color: #fff;
-}
-
-.advertising__bg-circle {
-  position: absolute;
-  width: 900px;
-  height: 1050px;
-  background: url('../img/bg_circle2.png') left bottom no-repeat;
-  top: 70px;
-  z-index: -1;
 }
 
 /* transport */
@@ -1482,9 +1472,7 @@ body {
 /* ------------------------cargo-html style --------------------------------*/
 .cargo-main__bg {
   background-color:#F7F7F7;
-  background-position: bottom right;
-  padding-bottom: 52px;
-  z-index: 0;
+  background-position: right 99% ;
 }
 
 /* main__baner */
@@ -1581,6 +1569,7 @@ body {
 .transport__col_margin {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 60px;
 }
 
 .cargo__card_first {
@@ -1667,8 +1656,13 @@ body {
 }
 
 .form__btn-add {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
   border: 1px solid var(--purpur);
   border-radius: 2px;
+  padding: 0;
+  text-align: center;
 }
 
 .form__block-col {
@@ -1727,11 +1721,16 @@ body {
   color: var(--darkviolet);
 }
 
+.country-city {
+  background: rgba(255, 255, 255, 0.2);
+  padding-bottom: 52px;
+  padding-top: 52px;
+}
+
 .cargo-country {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-top: 122px;
 }
 
 .cargo-country__container__title {
@@ -1864,7 +1863,48 @@ body {
 }
 
 .services__bg {
-  background: url('../img/cargo-bg.svg') -9% center no-repeat, url('../img/truck-bg.svg') right bottom no-repeat;
+  background: url('../img/cargo-bg.svg') -9% center no-repeat, url('../img/truck-bg.svg') right bottom no-repeat, #F7F7F7;
 }
 
+.service__container {
+  display: flex;
+}
 
+.filter__form-service {
+  padding: 20px 15px 37px;
+}
+
+.foorm__title-service {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.service__col-form {
+  margin-right: 21px;
+  min-width: 300px;
+}
+
+.sto__map-service {
+  height: 60px;
+  max-width: 186px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #03A863;
+  border-color: #03A863;
+  background: url('../img/marker-green.png') 25px center no-repeat;
+
+}
+
+.service-content {
+  margin-top: 25px;
+}
+
+.top-sto__service {
+  background: url('../img/bg_circle2.png') left center no-repeat;
+  padding-bottom: 0;
+}
+
+.top-sto__row-service {
+  margin-bottom: 74px;
+}

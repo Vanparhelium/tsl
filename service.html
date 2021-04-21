@@ -80,246 +80,410 @@
 
     <section class="services services__bg">
       <div class="container">
-        <div class="container__header">
-          <h2 class="container__title">Сервис в АЛматы</h2>
-          <a class="btn__all">Смотреть всё</a>
-        </div>
-        <div class="services__content">
-          <div class="services__box">
-            <div class="box-top">
-              <div class="box-header">
-                <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
-                <div class="box-header__price">от 50 000 тг.</div>
-              </div>
-              <p class="box__text">
-                СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
-              </p>
-              <div class="box__service">
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт кузова</div>
-                <div class="box__item">Ремонт кузова</div>
-              </div>
-            </div>
-            <div class="box__footer">
-              <div class="box__footer_row">
-                <div class="box__service-name">СТО Вашкевич
-                  <span class="box__like">5</span>
-                  <span class="box__dislike">5</span>
+        <div class="service__container">
+          <div class="service-content__col service__col-form">
+            <form action="" class="filter__form filter__form-service">
+              <h4 class="foorm__title foorm__title-service">
+                Фильтр
+              </h4>
+              <div class="filter__form_col">
+                <div class="filter__form_row">
+                  <fieldset class="form__fieldset">
+                      <legend class="form__legend">Город</legend>
+                      <div class="form__block form__block_pading">
+                        <input type="text" name="" id="" value="Алматы" class="form__type-text">
+                        <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
+                      </div>
+                  </fieldset>
                 </div>
-                <div class="box__service-address">
-                  г. Алматы, Первомайка, ул. Ключевая 1г
+                <div class="filter__form_row filter__form_row-adaptive">
+                  <div class="filter__form_col filter__form_col-form">
+                    <fieldset class="form__fieldset">
+                      <legend class="form__legend">Категория:</legend>
+                      <div class="form__block-col">
+                        <div class="form__block form__block_row">
+                          <select name="" id="" class="form__select">
+                            <option value="">Ремонт двигателя</option>
+                          </select>
+                          <div class="form-btn__dox form-btn__dox_first">
+                            <input type="button" value="+" class="form__btn-add">
+                          </div>
+                        </div>
+                        <div class="form__block form__block_row">
+                          <select name="" id="" class="form__select">
+                            <option value="">Ремонт двигателя</option>
+                          </select>
+                         <div class="form-btn__dox">
+                           <input type="button" value="+" class="form__btn-add">
+                          </div>
+                        </div>
+                        <div class="form__block">
+                          <select name="" id="" class="form__select">
+                            <option value="">Ремонт двигателя</option>
+                          </select>
+                          <div class="form-btn__dox">
+                            <input type="button" value="+" class="form__btn-add">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
                 </div>
               </div>
-              <div class="box__footer_row box__footer_row-contact">
-                <a href="" class="box__contact box__contact-link">Показать контакты</a>
-                <div class="box__date-travel services__date-travel">
-                  01.09.2020
-                </div>
-                <div class="box__time-travel services__time-travel">
-                  19:30
-                </div>
-              </div>
-            </div>
+                <input type="submit" value="Применить" class="form__btn">
+            </form>
           </div>
-        </div>
-        <div class="services__content">
-          <div class="services__box">
-            <div class="box-top">
-              <div class="box-header">
-                <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
-                <div class="box-header__price">от 50 000 тг.</div>
-              </div>
-              <p class="box__text">
-                СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
-              </p>
-              <div class="box__service">
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт кузова</div>
-                <div class="box__item">Ремонт кузова</div>
+          <div class="service-content__col">
+            <div class="sorting">
+              <div class="sorting__row">
+                <div class="sorting__total">Всего 450 грузов</div>
+                <div class="sorting__sort">Сортировка</div>
+                <select name="" id="" class="sorting__select">
+                  <option value="">Сначала новые</option>
+                </select>
+                <a href="" class="sto__map sto__map-service">СТО на карте</a>
               </div>
             </div>
-            <div class="box__footer">
-              <div class="box__footer_row">
-                <div class="box__service-name">СТО Вашкевич
-                  <span class="box__like">5</span>
-                  <span class="box__dislike">5</span>
+            <div class="services__content service-content">
+              <div class="services__box">
+                <div class="box-top">
+                  <div class="box-header">
+                    <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
+                    <div class="box-header__price">от 50 000 тг.</div>
+                  </div>
+                  <p class="box__text">
+                    СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
+                  </p>
+                  <div class="box__service">
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт кузова</div>
+                    <div class="box__item">Ремонт кузова</div>
+                  </div>
                 </div>
-                <div class="box__service-address">
-                  г. Алматы, Первомайка, ул. Ключевая 1г
-                </div>
-              </div>
-              <div class="box__footer_row box__footer_row-contact">
-                <a href="" class="box__contact box__contact-link">Показать контакты</a>
-                <div class="box__date-travel services__date-travel">
-                  01.09.2020
-                </div>
-                <div class="box__time-travel services__time-travel">
-                  19:30
+                <div class="box__footer">
+                  <div class="box__footer_row">
+                    <div class="box__service-name">СТО Вашкевич
+                      <span class="box__like">5</span>
+                      <span class="box__dislike">5</span>
+                    </div>
+                    <div class="box__service-address">
+                      г. Алматы, Первомайка, ул. Ключевая 1г
+                    </div>
+                  </div>
+                  <div class="box__footer_row box__footer_row-contact">
+                    <a href="" class="box__contact box__contact-link">Показать контакты</a>
+                    <div class="box__date-travel services__date-travel">
+                      01.09.2020
+                    </div>
+                    <div class="box__time-travel services__time-travel">
+                      19:30
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="services__content">
-          <div class="services__box">
-            <div class="box-top">
-              <div class="box-header">
-                <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
-                <div class="box-header__price">от 50 000 тг.</div>
-              </div>
-              <p class="box__text">
-                СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
-              </p>
-              <div class="box__service">
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт кузова</div>
-                <div class="box__item">Ремонт кузова</div>
+            <div class="services__content service-content">
+              <div class="services__box">
+                <div class="box-top">
+                  <div class="box-header">
+                    <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
+                    <div class="box-header__price">от 50 000 тг.</div>
+                  </div>
+                  <p class="box__text">
+                    СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
+                  </p>
+                  <div class="box__service">
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт кузова</div>
+                    <div class="box__item">Ремонт кузова</div>
+                  </div>
+                </div>
+                <div class="box__footer">
+                  <div class="box__footer_row">
+                    <div class="box__service-name">СТО Вашкевич
+                      <span class="box__like">5</span>
+                      <span class="box__dislike">5</span>
+                    </div>
+                    <div class="box__service-address">
+                      г. Алматы, Первомайка, ул. Ключевая 1г
+                    </div>
+                  </div>
+                  <div class="box__footer_row box__footer_row-contact">
+                    <a href="" class="box__contact box__contact-link">Показать контакты</a>
+                    <div class="box__date-travel services__date-travel">
+                      01.09.2020
+                    </div>
+                    <div class="box__time-travel services__time-travel">
+                      19:30
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="box__footer">
-              <div class="box__footer_row">
-                <div class="box__service-name">СТО Вашкевич
-                  <span class="box__like">5</span>
-                  <span class="box__dislike">5</span>
+            <div class="services__content service-content">
+              <div class="services__box">
+                <div class="box-top">
+                  <div class="box-header">
+                    <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
+                    <div class="box-header__price">от 50 000 тг.</div>
+                  </div>
+                  <p class="box__text">
+                    СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
+                  </p>
+                  <div class="box__service">
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт кузова</div>
+                    <div class="box__item">Ремонт кузова</div>
+                  </div>
                 </div>
-                <div class="box__service-address">
-                  г. Алматы, Первомайка, ул. Ключевая 1г
+                <div class="box__footer">
+                  <div class="box__footer_row">
+                    <div class="box__service-name">СТО Вашкевич
+                      <span class="box__like">5</span>
+                      <span class="box__dislike">5</span>
+                    </div>
+                    <div class="box__service-address">
+                      г. Алматы, Первомайка, ул. Ключевая 1г
+                    </div>
+                  </div>
+                 <div class="box__footer_row box__footer_row-contact">
+                    <a href="" class="box__contact box__contact-link">Показать контакты</a>
+                    <div class="box__date-travel services__date-travel">
+                      01.09.2020
+                    </div>
+                    <div class="box__time-travel services__time-travel">
+                      19:30
+                    </div>
+                 </div>
                 </div>
-              </div>
-             <div class="box__footer_row box__footer_row-contact">
-                <a href="" class="box__contact box__contact-link">Показать контакты</a>
-                <div class="box__date-travel services__date-travel">
-                  01.09.2020
-                </div>
-                <div class="box__time-travel services__time-travel">
-                  19:30
-                </div>
-             </div>
-            </div>
-          </div>
-        </div>
-        <div class="services__content">
-          <div class="services__box">
-            <div class="box-top">
-              <div class="box-header">
-                <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
-                <div class="box-header__price">от 50 000 тг.</div>
-              </div>
-              <p class="box__text">
-                СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
-              </p>
-              <div class="box__service">
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт кузова</div>
-                <div class="box__item">Ремонт кузова</div>
-              </div>
-            </div>
-            <div class="box__footer">
-              <div class="box__footer_row">
-                <div class="box__service-name">СТО Вашкевич
-                  <span class="box__like">5</span>
-                  <span class="box__dislike">5</span>
-                </div>
-                <div class="box__service-address">
-                  г. Алматы, Первомайка, ул. Ключевая 1г
-                </div>
-              </div>
-             <div class="box__footer_row box__footer_row-contact">
-                <a href="" class="box__contact box__contact-link">Показать контакты</a>
-                <div class="box__date-travel services__date-travel">
-                  01.09.2020
-                </div>
-                <div class="box__time-travel services__time-travel">
-                  19:30
-                </div>
-             </div>
-            </div>
-          </div>
-        </div>
-        <div class="services__content">
-          <div class="services__box">
-            <div class="box-top">
-              <div class="box-header">
-                <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
-                <div class="box-header__price">от 50 000 тг.</div>
-              </div>
-              <p class="box__text">
-                СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
-              </p>
-              <div class="box__service">
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт кузова</div>
-                <div class="box__item">Ремонт кузова</div>
               </div>
             </div>
-            <div class="box__footer">
-              <div class="box__footer_row">
-                <div class="box__service-name">СТО Вашкевич
-                  <span class="box__like">5</span>
-                  <span class="box__dislike">5</span>
+            <div class="services__content service-content">
+              <div class="services__box">
+                <div class="box-top">
+                  <div class="box-header">
+                    <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
+                    <div class="box-header__price">от 50 000 тг.</div>
+                  </div>
+                  <p class="box__text">
+                    СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
+                  </p>
+                  <div class="box__service">
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт кузова</div>
+                    <div class="box__item">Ремонт кузова</div>
+                  </div>
                 </div>
-                <div class="box__service-address">
-                  г. Алматы, Первомайка, ул. Ключевая 1г
+                <div class="box__footer">
+                  <div class="box__footer_row">
+                    <div class="box__service-name">СТО Вашкевич
+                      <span class="box__like">5</span>
+                      <span class="box__dislike">5</span>
+                    </div>
+                    <div class="box__service-address">
+                      г. Алматы, Первомайка, ул. Ключевая 1г
+                    </div>
+                  </div>
+                 <div class="box__footer_row box__footer_row-contact">
+                    <a href="" class="box__contact box__contact-link">Показать контакты</a>
+                    <div class="box__date-travel services__date-travel">
+                      01.09.2020
+                    </div>
+                    <div class="box__time-travel services__time-travel">
+                      19:30
+                    </div>
+                 </div>
                 </div>
               </div>
-             <div class="box__footer_row box__footer_row-contact">
-                <a href="" class="box__contact box__contact-link">Показать контакты</a>
-                <div class="box__date-travel services__date-travel">
-                  01.09.2020
-                </div>
-                <div class="box__time-travel services__time-travel">
-                  19:30
-                </div>
-             </div>
             </div>
-          </div>
-        </div>
-        <div class="services__content">
-          <div class="services__box">
-            <div class="box-top">
-              <div class="box-header">
-                <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
-                <div class="box-header__price">от 50 000 тг.</div>
-              </div>
-              <p class="box__text">
-                СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
-              </p>
-              <div class="box__service">
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт двигателя</div>
-                <div class="box__item">Ремонт кузова</div>
-                <div class="box__item">Ремонт кузова</div>
+            <div class="services__content service-content">
+              <div class="services__box">
+                <div class="box-top">
+                  <div class="box-header">
+                    <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
+                    <div class="box-header__price">от 50 000 тг.</div>
+                  </div>
+                  <p class="box__text">
+                    СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
+                  </p>
+                  <div class="box__service">
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт кузова</div>
+                    <div class="box__item">Ремонт кузова</div>
+                  </div>
+                </div>
+                <div class="box__footer">
+                  <div class="box__footer_row">
+                    <div class="box__service-name">СТО Вашкевич
+                      <span class="box__like">5</span>
+                      <span class="box__dislike">5</span>
+                    </div>
+                    <div class="box__service-address">
+                      г. Алматы, Первомайка, ул. Ключевая 1г
+                    </div>
+                  </div>
+                 <div class="box__footer_row box__footer_row-contact">
+                    <a href="" class="box__contact box__contact-link">Показать контакты</a>
+                    <div class="box__date-travel services__date-travel">
+                      01.09.2020
+                    </div>
+                    <div class="box__time-travel services__time-travel">
+                      19:30
+                    </div>
+                 </div>
+                </div>
               </div>
             </div>
-            <div class="box__footer">
-              <div class="box__footer_row">
-                <div class="box__service-name">СТО Вашкевич
-                  <span class="box__like">5</span>
-                  <span class="box__dislike">5</span>
+            <div class="services__content service-content">
+              <div class="services__box">
+                <div class="box-top">
+                  <div class="box-header">
+                    <div class="box-header__title">СТО грузовых автомобилей и спецтехники</div>
+                    <div class="box-header__price">от 50 000 тг.</div>
+                  </div>
+                  <p class="box__text">
+                    СТО грузовых автомобилей выполняет ремонт автомобилей любых марок (двигатель, КП, ходовка, кузовые работы и др.)
+                  </p>
+                  <div class="box__service">
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт двигателя</div>
+                    <div class="box__item">Ремонт кузова</div>
+                    <div class="box__item">Ремонт кузова</div>
+                  </div>
                 </div>
-                <div class="box__service-address">
-                  г. Алматы, Первомайка, ул. Ключевая 1г
+                <div class="box__footer">
+                  <div class="box__footer_row">
+                    <div class="box__service-name">СТО Вашкевич
+                      <span class="box__like">5</span>
+                      <span class="box__dislike">5</span>
+                    </div>
+                    <div class="box__service-address">
+                      г. Алматы, Первомайка, ул. Ключевая 1г
+                    </div>
+                  </div>
+                 <div class="box__footer_row box__footer_row-contact">
+                    <a href="" class="box__contact box__contact-link">Показать контакты</a>
+                    <div class="box__date-travel services__date-travel">
+                      01.09.2020
+                    </div>
+                    <div class="box__time-travel services__time-travel">
+                      19:30
+                    </div>
+                 </div>
                 </div>
               </div>
-             <div class="box__footer_row box__footer_row-contact">
-                <a href="" class="box__contact box__contact-link">Показать контакты</a>
-                <div class="box__date-travel services__date-travel">
-                  01.09.2020
-                </div>
-                <div class="box__time-travel services__time-travel">
-                  19:30
-                </div>
-             </div>
+            </div>
+            <div class="download-more">
+              <button class="btn__download-more">Загрузить еще</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="top-sto top-sto__service">
+      <div class="container">
+        <h2 class="container__title top-sto__title">ТОп-3 СТО алматы</h2>
+        <div class="top-sto__block">
+          <div class="top-sto__box">
+            <div class="top-sto__box-img"></div>
+            <div class="top-sto__info">
+              <div class="top-sto__repairs">
+                <span class="repairs__card">Ремонт двигателя</span>
+                <span class="repairs__card">Ремонт кузова</span>
+              </div>
+              <div class="top-sto__name">СТО Вашкевич</div>
+              <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+              <div class="top-sto__services">Размещено услуг:
+                <span class="top-sto__namb">12</span>
+              </div>
+              <div class="top-sto__review">Отзывов:
+                <span class="top-sto__namb">7</span>
+                <span class="like">5</span>
+                <span class="dislike">5</span>
+              </div>
+              <button class="top-sto__box-btn">Показать контакты</button>
+            </div>
+          </div>
+          <div class="top-sto__box">
+            <div class="top-sto__box-img"></div>
+            <div class="top-sto__info">
+              <div class="top-sto__repairs">
+                <span class="repairs__card">Ремонт двигателя</span>
+                <span class="repairs__card">Ремонт кузова</span>
+              </div>
+              <div class="top-sto__name">СТО Вашкевич</div>
+              <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+              <div class="top-sto__services">Размещено услуг:
+                <span class="top-sto__namb">12</span>
+              </div>
+              <div class="top-sto__review">Отзывов:
+                <span class="top-sto__namb">7</span>
+                <span class="like">5</span>
+                <span class="dislike">5</span>
+              </div>
+              <button class="top-sto__box-btn">Показать контакты</button>
+            </div>
+          </div>
+          <div class="top-sto__box">
+            <div class="top-sto__box-img"></div>
+            <div class="top-sto__info">
+              <div class="top-sto__repairs">
+                <span class="repairs__card">Ремонт двигателя</span>
+                <span class="repairs__card">Ремонт кузова</span>
+              </div>
+              <div class="top-sto__name">СТО Вашкевич</div>
+              <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+              <div class="top-sto__services">Размещено услуг:
+                <span class="top-sto__namb">12</span>
+              </div>
+              <div class="top-sto__review">Отзывов:
+                <span class="top-sto__namb">7</span>
+                <span class="like">5</span>
+                <span class="dislike">5</span>
+              </div>
+              <button class="top-sto__box-btn">Показать контакты</button>
+            </div>
+          </div>
+        </div>
+        <div class="top-sto__row top-sto__row-service">
+          <a href="" class="sto__map">СТО на карте</a>
+          <a href="" class="sto__more">Смотреть все</a>
+        </div>
+      </div>
+      <div class="country-city">
+        <div class="cargo-country">
+          <h2 class="container__title cargo-country__container__title">Грузы по Казахстану</h2>
+          <div class="cargo-country__links">
+            <a href="" class="cargo-country__link">грузы Алматы |</a>
+            <a href="" class="cargo-country__link">грузы Астана |</a>
+            <a href="" class="cargo-country__link">грузы Актобе |</a>
+            <a href="" class="cargo-country__link">грузы Кокшетау |</a>
+            <a href="" class="cargo-country__link">грузы Талдыкорган |</a>
+            <a href="" class="cargo-country__link">грузы Атырау |</a>
+            <a href="" class="cargo-country__link">грузы Оскемен (Усть-Каменогорск) |</a>
+            <a href="" class="cargo-country__link">грузы Тараз |</a>
+            <a href="" class="cargo-country__link">грузы Уральск |</a>
+            <a href="" class="cargo-country__link">грузы Караганда |</a>
+            <a href="" class="cargo-country__link">грузы Костанай |</a>
+            <a href="" class="cargo-country__link">грузы Кызылорда |</a>
+            <a href="" class="cargo-country__link">грузы Актау |</a>
+            <a href="" class="cargo-country__link">грузы Павлодар |</a>
+            <a href="" class="cargo-country__link">грузы Петропавловск |</a>
+            <a href="" class="cargo-country__link">грузы Шымкент |</a>
+          </div>
+      </div>
+    </div>
+    </section>
+    <!-- /top-sto -->
+
+
+
   </main>
 
   <footer>
