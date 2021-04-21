@@ -1884,6 +1884,23 @@ body {
   min-width: 300px;
 }
 
+.sorting__service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.sorting__service_row {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting__service_row:first-child {
+  margin-right: 50px;
+}
+
 .sto__map-service {
   height: 60px;
   max-width: 186px;
@@ -1893,7 +1910,7 @@ body {
   color: #03A863;
   border-color: #03A863;
   background: url('../img/marker-green.png') 25px center no-repeat;
-
+  margin-left: 15px;
 }
 
 .service-content {
@@ -1903,8 +1920,52 @@ body {
 .top-sto__service {
   background: url('../img/bg_circle2.png') left center no-repeat;
   padding-bottom: 0;
+  margin-left: 15px;
 }
 
 .top-sto__row-service {
   margin-bottom: 74px;
+}
+
+/* ------------------------------ adaptive transport --------------------------------- */
+
+@media (max-width: 1200px) {
+  .service__container {
+    flex-direction: column;
+  }
+
+  .filter__form-service {
+    max-width: 300px;
+  }
+
+  .form__service_col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sorting__service {
+    flex-direction: column;
+  }
+
+  .sorting__service_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sorting__service_row:first-child {
+    margin: 20px 0;
+  }
+
+  .sorting__select {
+    order: 2;
+  }
+
+  .sto__map-service {
+    order: 1;
+    margin: 0;
+    padding: 20px;
+    background-position: 10px center;
+  }
 }
