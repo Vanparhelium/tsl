@@ -1419,6 +1419,14 @@ body {
     margin-right: 19px;
   }
 
+  .hero {
+    height: 235px;
+  }
+
+  .hero__title {
+    margin-top: 95px;
+  }
+
 
 
   /* container__menu */
