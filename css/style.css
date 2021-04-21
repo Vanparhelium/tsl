@@ -1969,3 +1969,240 @@ body {
     background-position: 10px center;
   }
 }
+
+/* -----------------spare.html-style----------------------------- */
+
+.spare__bg {
+  background: url('../img/cargo-bg.svg') -9% center no-repeat, url('../img/truck-bg.svg') right 90% no-repeat, #F7F7F7;
+}
+
+.main__baner-spare {
+  background: url('../img/spare_bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.spare__menu {
+  padding-top: 59px;
+  padding-bottom: 99px;
+  background: #E5E5E5;
+}
+
+.spare__menu-title {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.spare__menu-nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.spare-menu__box {
+  width: 148px;
+  height: 127px;
+  margin-top: 17px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.spare__menu-list {
+  margin-right: 22px;
+}
+
+.spare-menu__img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  /* -webkit-mask-size: cover; */
+  background: #615BA3;
+}
+
+.spare-menu__img-mule {
+  mask-image: url('../img/spare/truck1.svg');
+  -webkit-mask-image: url('../img/spare/truck1.svg');
+}
+
+.spare-menu__img-truck {
+  mask-image: url('../img/spare/truck2.svg');
+  -webkit-mask-image: url('../img/spare/truck2.svg');
+}
+
+.spare-menu__img-trailer {
+  mask-image: url('../img/spare/box.svg');
+  -webkit-mask-image: url('../img/spare/box.svg');
+}
+
+.spare-menu__img-bus {
+  mask-image: url('../img/spare/bus3.svg');
+  -webkit-mask-image: url('../img/spare/bus3.svg');
+}
+
+.spare-menu__img-mini-bus {
+  mask-image: url('../img/spare/van1.svg');
+  -webkit-mask-image: url('../img/spare/van1.svg');
+}
+
+.spare-menu__img-tipper {
+  mask-image: url('../img/spare/truck3.svg');
+  -webkit-mask-image: url('../img/spare/truck3.svg');
+}
+
+.spare-menu__img-traktor {
+  mask-image: url('../img/spare/Outline.svg');
+  -webkit-mask-image: url('../img/spare/Outline.svg');
+}
+
+.spare-menu__img-tires {
+  mask-image: url('../img/spare/tractor1.svg');
+  -webkit-mask-image: url('../img/spare/tractor1.svg');
+}
+
+.spare-menu__img-jack {
+  mask-image: url('../img/spare/box2.svg');
+  -webkit-mask-image: url('../img/spare/box2.svg');
+}
+
+.spare-menu__img-electro {
+  mask-image: url('../img/spare/box4.svg');
+  -webkit-mask-image: url('../img/spare/box4.svg');
+}
+
+.spare-menu__img-air {
+  mask-image: url('../img/spare/box5.svg');
+  -webkit-mask-image: url('../img/spare/box5.svg');
+}
+
+.spare-menu__img-oil {
+  mask-image: url('../img/spare/box6.svg');
+  -webkit-mask-image: url('../img/spare/box6.svg');
+}
+
+.spare-menu__img-support {
+  mask-image: url('../img/spare/customer-support.svg');
+  -webkit-mask-image: url('../img/spare/customer-support.svg');
+}
+
+.chek-form {
+  margin-top: -7px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.form-filter__check {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #00A6DB;
+}
+
+.spare-sorting__select {
+  margin: 0;
+}
+
+.sorting__select:last-child {
+  margin-left: 30px;
+}
+
+.spare-content {
+  margin-top: 25px;
+  max-width: 834px;
+}
+
+.spare-ad__box {
+  display: flex;
+}
+
+.spare-ad__img {
+  width: 155px;
+  height: 202px;
+  margin-right: 26px;
+  border-radius: 4px;
+  float: left;
+}
+
+.box-top-spare {
+  padding-right: 22px;
+}
+
+.box-spare__head {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.box-spare__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.box-spare__price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #615BA3;
+  white-space: nowrap;
+}
+
+.box-spare__text {
+  margin-top: 6px;
+}
+
+.box-spare__text p {
+  margin: 0;
+  line-height: 17px;
+}
+
+.box__spare-item {
+  margin-top: 10px;
+}
+
+/* -----------------------service.html-adaptive------------------------------- */
+
+@media (max-width: 1200px) {
+  .spare__menu-nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .spare__menu-nav {
+    justify-content: center;
+  }
+
+  .box-spare__head {
+    flex-direction: column;
+  }
+
+  .box-spare__price {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
