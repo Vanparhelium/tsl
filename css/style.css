@@ -1391,9 +1391,9 @@ body {
     position: absolute;
     z-index: 2;
     left: -100%;
-    top: 40px;
+    top: 0;
     width: 270px;
-    height: 320px;
+    height: 315px;
     margin: 0;
     padding: 0 20px 20px 57px;
     background-color: #FFFFFF;
