@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TSL</title>
+  <title>Придорожный сервис</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -69,6 +69,232 @@
       </div>
     </div>
   </header>
+
+  <main class="main__roadside">
+
+    <section class="main__baner main__baner-roadside">
+      <div class="container">
+        <h2 class="main__baner-title">
+          Кафе, гостиницы и паркинги в Алматы
+        </h2>
+      </div>
+    </section>
+
+    <section class="roadside-section">
+      <div class="container">
+        <div class="roadside__container">
+          <div class="roadside__col-form">
+            <form action="" class="filter__form filter__form-roadside">
+              <h4 class="foorm__title foorm__title-service">
+                Фильтр
+              </h4>
+              <div class="filter__form_col">
+                <div class="filter__form_row">
+                  <fieldset class="form__fieldset">
+                      <legend class="form__legend">Город/Страна</legend>
+                      <div class="form__block form__block_pading">
+                        <input type="text" name="" id="" value="Весь Казахстан" class="form__type-text">
+                        <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
+                      </div>
+                  </fieldset>
+                </div>
+                <div class="filter__form_row">
+                  <fieldset class="form__fieldset">
+                      <legend class="form__legend">Ключевые слова</legend>
+                      <div class="form__block form__block_pading">
+                        <input type="text" name="" id="" value="Поиск" class="form__type-text">
+                        <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
+                      </div>
+                  </fieldset>
+                </div>
+                <div class="filter__form_row">
+                  <div class="filter__form_col form__service_col">
+                    <fieldset class="form__fieldset">
+                      <legend class="form__legend">Категория</legend>
+                      <div class="form__block-col">
+                        <div class="form__block form__block_row">
+                          <select name="" id="" class="form__select">
+                            <option value="">Кафе</option>
+                            <option value="">Гостиницы</option>
+                          </select>
+                          <div class="form-btn__dox">
+                            <input type="button" value="+" class="form__btn-add">
+                           </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+                <input type="submit" value="Применить" class="form__btn">
+            </form>
+          </div>
+          <div class="content__col">
+            <div class="sorting">
+              <div class="sorting__roadside">
+                  <div class="check-show readside__checkbox">
+                    <input type="checkbox" name="" id="check-show" checked>
+                    <label for="check-show" class="checkbox__lable">Показать все</label>
+                  </div>
+                  <div class="check-cafe readside__checkbox">
+                    <input type="checkbox" name="" id="check-cafe" class="check-cafe" checked>
+                    <label for="check-cafe" class="checkbox__lable">Придорожные кафе</label>
+                  </div>
+                  <div class="check-hotel readside__checkbox">
+                    <input type="checkbox" name="" id="check-hotel" class="check-hotel" checked>
+                    <label for="check-hotel" class="checkbox__lable">Придорожные гостинцы</label>
+                  </div>
+                  <div class="check-parking readside__checkbox">
+                    <input type="checkbox" name="" id="check-parking" class="check-parking" checked>
+                    <label for="check-parking" class="checkbox__lable">Паркинги</label>
+                  </div>
+              </div>
+            </div>
+            <div class="roadside__content">
+                <div class="roadside__content-box">
+                  <div class=" roadside-box">
+                    <img src="img/cafe.jpg" alt="кафе" class="roadside__box-img">
+                    <div class="content-box__info">
+                      <div class="roadside-box__card">
+                        <span class="roadside__card">Ремонт двигателя</span>
+                      </div>
+                      <div class="top-sto__name content-box__name">“Пончики-блинчики”</div>
+                      <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+                      <div class="top-sto__review content-box__review">Отзывов:
+                        <span class="top-sto__namb">7</span>
+                        <span class="like">5</span>
+                        <span class="dislike">5</span>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class="roadside-box">
+                    <img src="img/cafe2.jpg" alt="кафе" class="roadside__box-img">
+                    <div class="content-box__info">
+                      <div class="roadside-box__card">
+                        <span class="roadside__card">Ремонт двигателя</span>
+                      </div>
+                      <div class="top-sto__name content-box__name">“Пончики-блинчики”</div>
+                      <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+                      <div class="top-sto__review content-box__review">Отзывов:
+                        <span class="top-sto__namb">7</span>
+                        <span class="like">5</span>
+                        <span class="dislike">5</span>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class="roadside-box">
+                    <img src="img/cafe.jpg" alt="кафе" class="roadside__box-img">
+                    <div class="content-box__info">
+                      <div class="roadside-box__card">
+                        <span class="roadside__card">Ремонт двигателя</span>
+                      </div>
+                      <div class="top-sto__name content-box__name">“Пончики-блинчики”</div>
+                      <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+                      <div class="top-sto__review content-box__review">Отзывов:
+                        <span class="top-sto__namb">7</span>
+                        <span class="like">5</span>
+                        <span class="dislike">5</span>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class="roadside-box">
+                    <img src="img/cafe2.jpg" alt="кафе" class="roadside__box-img">
+                    <div class="content-box__info">
+                      <div class="roadside-box__card">
+                        <span class="roadside__card">Ремонт двигателя</span>
+                      </div>
+                      <div class="top-sto__name content-box__name">“Пончики-блинчики”</div>
+                      <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+                      <div class="top-sto__review content-box__review">Отзывов:
+                        <span class="top-sto__namb">7</span>
+                        <span class="like">5</span>
+                        <span class="dislike">5</span>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+              <div class="roadside__content_row">
+                <div class="roadside__content-box">
+                  <div class="roadside-box">
+                    <img src="img/cafe.jpg" alt="кафе" class="roadside__box-img">
+                    <div class="content-box__info">
+                      <div class="roadside-box__card">
+                        <span class="roadside__card">Ремонт двигателя</span>
+                      </div>
+                      <div class="top-sto__name content-box__name">“Пончики-блинчики”</div>
+                      <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+                      <div class="top-sto__review content-box__review">Отзывов:
+                        <span class="top-sto__namb">7</span>
+                        <span class="like">5</span>
+                        <span class="dislike">5</span>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class="roadside-box">
+                    <img src="img/cafe2.jpg" alt="кафе" class="roadside__box-img">
+                    <div class="content-box__info">
+                      <div class="roadside-box__card">
+                        <span class="roadside__card">Ремонт двигателя</span>
+                      </div>
+                      <div class="top-sto__name content-box__name">“Пончики-блинчики”</div>
+                      <div class="top-sto__direction">г. Алматы, Первомайка, ул. Ключевая 1г</div>
+                      <div class="top-sto__review content-box__review">Отзывов:
+                        <span class="top-sto__namb">7</span>
+                        <span class="like">5</span>
+                        <span class="dislike">5</span>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="country-city">
+      <div class="cargo-country">
+        <h2 class="container__title cargo-country__container__title">Грузы по Казахстану</h2>
+        <div class="cargo-country__links">
+          <a href="" class="cargo-country__link">грузы Алматы |</a>
+          <a href="" class="cargo-country__link">грузы Астана |</a>
+          <a href="" class="cargo-country__link">грузы Актобе |</a>
+          <a href="" class="cargo-country__link">грузы Кокшетау |</a>
+          <a href="" class="cargo-country__link">грузы Талдыкорган |</a>
+          <a href="" class="cargo-country__link">грузы Атырау |</a>
+          <a href="" class="cargo-country__link">грузы Оскемен (Усть-Каменогорск) |</a>
+          <a href="" class="cargo-country__link">грузы Тараз |</a>
+          <a href="" class="cargo-country__link">грузы Уральск |</a>
+          <a href="" class="cargo-country__link">грузы Караганда |</a>
+          <a href="" class="cargo-country__link">грузы Костанай |</a>
+          <a href="" class="cargo-country__link">грузы Кызылорда |</a>
+          <a href="" class="cargo-country__link">грузы Актау |</a>
+          <a href="" class="cargo-country__link">грузы Павлодар |</a>
+          <a href="" class="cargo-country__link">грузы Петропавловск |</a>
+          <a href="" class="cargo-country__link">грузы Шымкент |</a>
+        </div>
+    </div>
+  </div>
+
+  </main>
 
 
   <footer>
