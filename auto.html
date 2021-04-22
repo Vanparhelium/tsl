@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TSL</title>
+  <title>Автотранспорт</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -70,6 +72,352 @@
     </div>
   </header>
 
+  <main>
+    <section class="main__baner main__baner-auto">
+      <div class="container">
+        <h2 class="main__baner-title">
+          Автотранспорт
+        </h2>
+      </div>
+    </section>
+
+    <section class="auto__section">
+      <div class="container">
+
+        <div class="auto-content__menu">
+          <ul class="spare__menu-nav">
+            <li class="spare__menu-list">
+              <div class="spare-menu__box">
+                <div class="spare-menu__img spare-menu__img-mule"></div>
+                <div class="spar-menu-box__title">Тягач</div>
+              </div>
+            </li>
+            <li class="spare__menu-list">
+              <div class="spare-menu__box">
+                <div class="spare-menu__img spare-menu__img-truck"></div>
+                <div class="spar-menu-box__title">Грузовик</div>
+              </div>
+            </li>
+            <li class="spare__menu-list">
+              <div class="spare-menu__box">
+                <div class="spare-menu__img spare-menu__img-trailer"></div>
+                <div class="spar-menu-box__title">Прицеп/
+                  полуприцеп</div>
+              </div>
+            </li>
+            <li class="spare__menu-list">
+              <div class="spare-menu__box">
+                <div class="spare-menu__img spare-menu__img-bus"></div>
+                <div class="spar-menu-box__title">Автобус</div>
+              </div>
+            </li>
+            <li class="spare__menu-list">
+              <div class="spare-menu__box">
+                <div class="spare-menu__img spare-menu__img-mini-bus"></div>
+                <div class="spar-menu-box__title">Микроавтобус</div>
+              </div>
+            </li>
+            <li class="spare__menu-list">
+              <div class="spare-menu__box">
+                <div class="spare-menu__img spare-menu__img-tipper"></div>
+                <div class="spar-menu-box__title">Самосвал</div>
+              </div>
+            </li>
+            <li class="spare__menu-list">
+              <div class="spare-menu__box">
+                <div class="spare-menu__img spare-menu__img-traktor"></div>
+                <div class="spar-menu-box__title">Спецтехника</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="avto__container">
+          <div class="avto__form">
+            <form action="" class="filter__form filter__form-roadside">
+              <h4 class="foorm__title foorm__title-service">
+                Фильтр
+              </h4>
+              <div class="filter__form_col">
+                <div class="filter__form_row">
+                  <fieldset class="form__fieldset avto-fieldset">
+                      <legend class="form__legend">Город/Страна</legend>
+                      <div class="form__block form__block_pading">
+                        <input type="text" name="" id="" value="Весь Казахстан" class="form__type-text">
+                        <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
+                      </div>
+                  </fieldset>
+                  <fieldset class="form__fieldset avto-fieldset">
+                      <legend class="form__legend">Ключевые слова</legend>
+                      <div class="form__block form__block_pading">
+                        <input type="text" name="" id="" value="Поиск" class="form__type-text">
+                        <div class="form-btn__dox"><input type="button" value="+" class="form__btn-add"></div>
+                      </div>
+                  </fieldset>
+                </div>
+                <div class="filter__form_row">
+                  <fieldset class="form__fieldset avto-fieldset">
+                      <legend class="form__legend">Категория</legend>
+                        <div class="form__block">
+                          <select name="" id="" class="form__select">
+                            <option value="">Новые</option>
+                          </select>
+                          <div class="form-btn__dox">
+                            <input type="button" value="+" class="form__btn-add">
+                           </div>
+                        </div>
+                  </fieldset>
+                  <fieldset class="form__fieldset avto-fieldset">
+                    <legend class="form__legend">Марка автомобиля</legend>
+                      <div class="form__block">
+                        <select name="" id="" class="form__select">
+                          <option value="">Выбрать</option>
+                          <option value="">ВАЗ</option>
+                        </select>
+                        <div class="form-btn__dox">
+                          <input type="button" value="+" class="form__btn-add">
+                         </div>
+                      </div>
+                  </fieldset>
+                </div>
+                <div class="filter__form_row">
+                  <fieldset class="form__fieldset avto-fieldset">
+                    <legend class="form__legend">Тип</legend>
+                    <div class="form__block-col">
+                      <div class="form__block form__block_row">
+                        <select name="" id="" class="form__select">
+                          <option value="">Выбрать</option>
+                        </select>
+                        <div class="form-btn__dox">
+                          <input type="button" value="+" class="form__btn-add">
+                         </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form__fieldset avto-fieldset">
+                    <legend class="form__legend">Стоимость</legend>
+                    <div class="form__block">
+                      <div class="form__text">От
+                        <input type="number" name="" id="" value="" placeholder="" class="form__date auto-form__date">
+                      </div>
+                      <div class="form__text auto-form__text">До
+                        <input type="number" name="" id="" value="" placeholder="" class="form__date auto-form__date">
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <input type="submit" value="Применить" class="form__btn">
+            </form>
+          </div>
+          <div class="content__col">
+            <div class="roadside__content">
+                <div class="roadside__content-box">
+                  <div class=" roadside-box">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="content-box__info">
+                      <div class="avto__price">
+                        500 000 тг.
+                      </div>
+                      <div class="avto-box__name content-box__name">VOLVO</div>
+                      <p class="avto__description">
+                        Тягач, 2014г, дизель, КПП механика
+                      </p>
+                      <div class="avto-add__row">
+                        <div class="sity__ad">г. Алматы</div>
+                        <div class="date__ad">01.09.2020</div>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class=" roadside-box">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="content-box__info">
+                      <div class="avto__price">
+                        500 000 тг.
+                      </div>
+                      <div class="avto-box__name content-box__name">VOLVO</div>
+                      <p class="avto__description">
+                        Тягач, 2014г, дизель, КПП механика
+                      </p>
+                      <div class="avto-add__row">
+                        <div class="sity__ad">г. Алматы</div>
+                        <div class="date__ad">01.09.2020</div>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class=" roadside-box">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="content-box__info">
+                      <div class="avto__price">
+                        500 000 тг.
+                      </div>
+                      <div class="avto-box__name content-box__name">VOLVO</div>
+                      <p class="avto__description">
+                        Тягач, 2014г, дизель, КПП механика
+                      </p>
+                      <div class="avto-add__row">
+                        <div class="sity__ad">г. Алматы</div>
+                        <div class="date__ad">01.09.2020</div>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class=" roadside-box">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="content-box__info">
+                      <div class="avto__price">
+                        500 000 тг.
+                      </div>
+                      <div class="avto-box__name content-box__name">VOLVO</div>
+                      <p class="avto__description">
+                        Тягач, 2014г, дизель, КПП механика
+                      </p>
+                      <div class="avto-add__row">
+                        <div class="sity__ad">г. Алматы</div>
+                        <div class="date__ad">01.09.2020</div>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class=" roadside-box">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="content-box__info">
+                      <div class="avto__price">
+                        500 000 тг.
+                      </div>
+                      <div class="avto-box__name content-box__name">VOLVO</div>
+                      <p class="avto__description">
+                        Тягач, 2014г, дизель, КПП механика
+                      </p>
+                      <div class="avto-add__row">
+                        <div class="sity__ad">г. Алматы</div>
+                        <div class="date__ad">01.09.2020</div>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roadside__content-box">
+                  <div class=" roadside-box">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/shutterstock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cafe2.jpg" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="content-box__info">
+                      <div class="avto__price">
+                        500 000 тг.
+                      </div>
+                      <div class="avto-box__name content-box__name">VOLVO</div>
+                      <p class="avto__description">
+                        Тягач, 2014г, дизель, КПП механика
+                      </p>
+                      <div class="avto-add__row">
+                        <div class="sity__ad">г. Алматы</div>
+                        <div class="date__ad">01.09.2020</div>
+                      </div>
+                      <button class="top-sto__box-btn">Показать контакты</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-city">
+      <div class="cargo-country">
+        <h2 class="container__title cargo-country__container__title">Грузы по Казахстану</h2>
+        <div class="cargo-country__links">
+          <a href="" class="cargo-country__link">грузы Алматы |</a>
+          <a href="" class="cargo-country__link">грузы Астана |</a>
+          <a href="" class="cargo-country__link">грузы Актобе |</a>
+          <a href="" class="cargo-country__link">грузы Кокшетау |</a>
+          <a href="" class="cargo-country__link">грузы Талдыкорган |</a>
+          <a href="" class="cargo-country__link">грузы Атырау |</a>
+          <a href="" class="cargo-country__link">грузы Оскемен (Усть-Каменогорск) |</a>
+          <a href="" class="cargo-country__link">грузы Тараз |</a>
+          <a href="" class="cargo-country__link">грузы Уральск |</a>
+          <a href="" class="cargo-country__link">грузы Караганда |</a>
+          <a href="" class="cargo-country__link">грузы Костанай |</a>
+          <a href="" class="cargo-country__link">грузы Кызылорда |</a>
+          <a href="" class="cargo-country__link">грузы Актау |</a>
+          <a href="" class="cargo-country__link">грузы Павлодар |</a>
+          <a href="" class="cargo-country__link">грузы Петропавловск |</a>
+          <a href="" class="cargo-country__link">грузы Шымкент |</a>
+        </div>
+    </div>
+  </section>
+
+
+  </main>
 
   <footer>
     <section class="footer">
@@ -172,6 +520,21 @@
         </div>
     </section>
   </footer>
+
+  <script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      // slider
+  var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    speed: 2000,
+
+  // If we need pagination
+  pagination: {
+   el: '.swiper-pagination',
+   clickable: 'true',
+  },
+});
+  </script>
 
 </body>
 </html>
