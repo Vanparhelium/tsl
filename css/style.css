@@ -2284,10 +2284,12 @@ body {
 
 .box-spare__text p {
   margin: 0;
+  padding-left: 10px;
   line-height: 17px;
 }
 
 .box__spare-item {
+  padding-left: 10px;
   margin-top: 10px;
 }
 
