@@ -1010,12 +1010,15 @@ body {
 .menu__btn:focus {
   background-color: var(--darkpurpur);
   transition-property: background-color;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 
 .menu__btn-close {
   display: none;
+  position: absolute;
+  top: 20px;
+  left: 230px;
   mask-image: url('../img/x.svg');
   -webkit-mask-image: url('../img/x.svg');
   background-color: var(--violet);
@@ -1395,7 +1398,7 @@ body {
     width: 270px;
     height: 315px;
     margin: 0;
-    padding: 0 20px 20px 57px;
+    padding: 0 20px 20px 30px;
     background-color: #FFFFFF;
     box-shadow: 0 5px 40px rgba(0, 0, 0, .1);
     transform-origin: top;
