@@ -3146,7 +3146,8 @@ body {
   margin-bottom: 24px;
 }
 
-.adding__checkbox input[type=checkbox] {
+.adding__checkbox input[type=checkbox],
+.adding__checkbox input[type=radio] {
 	display:none;
 }
 
@@ -3163,7 +3164,8 @@ body {
   background: #D4D4D4;
 }
 
-.adding__checkbox input[type=checkbox]:checked + label:after {
+.adding__checkbox input[type=checkbox]:checked + label:after,
+.adding__checkbox input[type=radio]:checked + label:after {
 	border: 1px solid #6E41E2;
 	background: #6E41E2;
 }
@@ -3402,4 +3404,111 @@ body {
   .container__adding-avto {
     padding: 20px 10px;
   }
+}
+
+/* ----------------------adding-avto-sale.html-style------------------------- */
+.adding-avto-sale__section {
+  padding-top: 117px;
+  padding-bottom: 150px;
+  background: #EAEAEA;
+}
+
+.adding-avto-sale__container {
+  padding: 44px 52px 107px;
+}
+
+.form-adding__row-check_top {
+  justify-content: start;
+  margin-top: 34px;
+  margin-bottom: -15px;
+}
+
+.form-rent__row {
+  margin-top: 35px;
+  margin-bottom: -26px;
+}
+
+.form-stock__text {
+  margin-bottom: -9px;
+  margin-top: 35px;
+}
+
+.form-texteria__row {
+  margin-bottom: 40px;
+  padding: 0;
+  height: 123px;
+  border: none;
+}
+
+.form__texteria {
+  margin-top: 6px;
+  padding: 18px 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  appearance: none;
+  resize: none;
+}
+
+.adding-grup__photo {
+  margin-bottom: 26px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adding__photo {
+  margin-top: 13px;
+}
+
+.adding__photo:not(:last-child) {
+  margin-right: 16px;
+}
+
+.adding__photo-img {
+  width: 192px;
+  height: 163px;
+  background: url('../img/shutterstock.jpg') center center no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.adding__photo-label {
+  position: relative;
+  display: block;
+  width: 192px;
+  height: 163px;
+  background: #E8E8E8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adding__photo input[type=file] {
+  display: none;
+}
+
+.pluse {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url('../img/add7.png') center center no-repeat;
+  background-size: contain;top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__company-card {
+  margin-top: 69px;
+  margin-bottom: 32px;
+}
+
+/* ------------------adaptive-adding-avto-sale-------------------------------- */
+@media (max-width: 600px) {
+
+.adding-avto-sale__section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: #EAEAEA;
+}
+.adding-avto-sale__container {
+  padding: 30px 10px;
+}
 }
