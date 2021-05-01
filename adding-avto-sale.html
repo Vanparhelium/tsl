@@ -210,16 +210,16 @@
               <div class="form-adding__row form-rent__row">
                 <div class="form-adding__box form-adding__box-max">
                   <legend>Фотографии</legend>
-                  <!-- <input type="file" name="photo" id="" multiple accept="image/jpag, image/*" class="adding__photo"> -->
-
                     <div class="adding-grup__photo">
                       <div class="adding__photo">
                         <div class="adding__photo-img"></div>
                       </div>
                       <div class="adding__photo">
+                        <output id="list"></output>
                         <label class="adding__photo-label">
-                          <input type="file" name="photo" id="" multiple accept="image/jpag, image/*">
-                          <span class="pluse"></span>
+                          <input type="file" name="photo" id="files" multiple accept="image/jpag, image/*">
+
+                          <div class="pluse"></div>
                         </label>
                       </div>
                     </div>
@@ -443,6 +443,38 @@
         </div>
     </section>
   </footer>
+<script>
+      // load photo file
+      function handleFileSelect(evt) {
+      var files = evt.target.files; // FileList object
 
+      // Loop through the FileList and render image files as thumbnails.
+      for (var i = 0, f; f = files[i]; i++) {
+
+        // Only process image files.
+        if (!f.type.match('image.*')) {
+          continue;
+        }
+
+        var reader = new FileReader();
+
+        // Closure to capture the file information.
+        reader.onload = (function(theFile) {
+          return function(e) {
+            // Render thumbnail.
+            var span = document.createElement('span');
+            span.innerHTML = ['<img class="adding__photo-img_new" src="', e.target.result,
+                              '" title="', theFile.name, '"/>'].join('');
+            document.getElementById('list').insertBefore(span, null);
+          };
+        })(f);
+
+        // Read in the image file as a data URL.
+        reader.readAsDataURL(f);
+      }
+    }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
 </body>
 </html>
