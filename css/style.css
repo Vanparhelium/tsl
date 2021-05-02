@@ -4250,3 +4250,9 @@ body {
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 630px) {
+  .lk__btn {
+    margin-bottom: 0;
+  }
+}
