@@ -5061,3 +5061,8 @@ body {
   max-width: 1920px;
   height: 963px;
 }
+
+.main__baner-map {
+  background: url('../img/map.jpg') center center no-repeat;
+  background-size: cover;
+}
