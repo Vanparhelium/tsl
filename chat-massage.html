@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Проверка контрагента</title>
+  <title>Сообщение</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -120,233 +120,46 @@
   </header>
 
   <main>
-    <section class="main__baner main__baner-counterparty">
-      <div class="container">
-        <h2 class="main__baner-title">
-          ПРОВЕРКА КОНТРАГЕНТА
-        </h2>
-      </div>
-    </section>
-
-    <section class="counterparty__section">
-      <div class="container counterparty__container">
-        <div class="counterparty-search">
-          <div class="counterparty-search__title">Введите данные для ввода</div>
-          <div class="counterparty-search__input">
-            <input type="text" name="" id="" placeholder="940801400383" class="search__input">
-            <input type="button" value="поиск" class="search__btn">
+    <section class="lk__section">
+      <div class="container lk__container">
+        <div class="lk-col__data">
+          <div class="massage__row">
+            <div class="massage__col">
+              <div class="lk-chat__col">
+                <img src="img/ava.jpg" alt="фото собеседника" class="lk-chat__avatar">
+              </div>
+              <div class="lk-chat__col-data">
+                <div class="lk-chat__name">Юрий Васильев</div>
+                <a href="mailto:Iurii@test.kz" class="lk-chat__mail">Iurii@test.kz</a>
+                <a href="tel:+77077777777" class="lk-chat__tel">+7 707 777 77 77</a>
+              </div>
+            </div>
+              <a href="chat.html" class="back-chat__arrow">Назад</a>
           </div>
-          <table class="result__table">
-            <caption class="result__table-title">Результаты поиска</caption>
-            <colgroup>
-              <col class="result__table-col_grey">
-              <col class="result__table-col_white">
-            </colgroup>
-            <tr>
-              <th>ИИН</th>
-              <th>930221432383</th>
-            </tr>
-            <tr>
-              <th>Фамилия, имя, отчество руководителя	</th>
-              <th>Иванова Елена Александровна</th>
-            </tr>
-            <tr>
-              <th>Основной код ОКЭД	</th>
-              <th>73200</th>
-            </tr>
-            <tr>
-              <th>Наименование вида экономической деятельности	</th>
-              <th>Исследование конъюнктуры рынка и изучение общественного мнения</th>
-            </tr>
-            <tr>
-              <th>Вторичный код ОКЭД</th>
-              <th>105</th>
-            </tr>
-            <tr>
-              <th>Код КРП (с учетом филиалов)</th>
-              <th>Малые предприятия (&#706= 5)</th>
-            </tr>
-            <tr>
-              <th>Наименование КРП</th>
-              <th>1515151515</th>
-            </tr>
-            <tr>
-              <th>КАТО</th>
-              <th>ИП	Г.АЛМАТЫ, БОСТАНДЫКСКИЙ РАЙОН
-              </th>
-            </tr>
-            <tr>
-              <th>Местонахождение </th>
-              <th>нет</th>
-            </tr>
-            <tr>
-              <th>Арест на банковские счета</th>
-              <th>нет</th>
-            </tr>
-            <tr>
-              <th>Арест на имущество</th>
-              <th>нет</th>
-            </tr>
-            <tr>
-              <th>Временное ограничение на выезд из РК</th>
-              <th>нет</th>
-            </tr>
-            <tr>
-              <th>Запрет на регистрационные действия ФЛ</th>
-              <th>нет</th>
-            </tr>
-            <tr>
-              <th>Запрет на регистрационные действия ЮЛ</th>
-              <th>нет</th>
-            </tr>
-            <tr>
-              <th>Запрет на совершение нотариальных действий</th>
-              <th>нет</th>
-            </tr>
-            <tr>
-              <th>Реализация арестованного имущества</th>
-              <th>нет</th>
-            </tr>
-          </table>
-
-          <table class="history__table">
-            <caption class="result__table-title">
-              Архив запросов
-            </caption>
-            <colgroup>
-              <col class="history__col_first">
-              <col>
-              <col>
-              <col class="history__col_last">
-            </colgroup>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04.10.20 14:39:11</td>
-              <td>ИИН 940801400383</td>
-              <td>
-                <a href="">Cмотреть результат</a>
-              </td>
-              <td>
-                <button class="btn-table__del">Удалить</button>
-              </td>
-            </tr>
-          </table>
+          <div class="massage__block">
+            <div class="massage__text massage__my chat-massage__text-max">
+              <div class="massage__text-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei.tur adipiscing elit, sed do eitur adipiscing elit, sed do ei......</p>
+              </div>
+              <div class="lk-chat__col-date">08.02.2021 23:32</div>
+            </div>
+            <div class="massage__text massage__client chat-massage__text-max chat-massage__new">
+              <div class="massage__text-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei.tur adipiscing elit, sed do eitur adipiscing elit, sed do ei......</p>
+              </div>
+              <div class="lk-chat__col-date">08.02.2021 23:32</div>
+            </div>
+          </div>
+          <form action="" class="massage__form">
+            <textarea name="" id="" cols="30" rows="6" class="massage__texteria"></textarea>
+            <div class="massage__btn-row">
+              <input type="button" value="Прикрепить" class="massage__btn-attach">
+              <input type="submit" value="Отправить" class="massage__btn-send">
+            </div>
+          </form>
         </div>
       </div>
     </section>
-
-    <section class="country-city">
-      <div class="cargo-country">
-        <h2 class="container__title cargo-country__container__title">Грузы по Казахстану</h2>
-        <div class="cargo-country__links">
-          <a href="" class="cargo-country__link">грузы Алматы |</a>
-          <a href="" class="cargo-country__link">грузы Астана |</a>
-          <a href="" class="cargo-country__link">грузы Актобе |</a>
-          <a href="" class="cargo-country__link">грузы Кокшетау |</a>
-          <a href="" class="cargo-country__link">грузы Талдыкорган |</a>
-          <a href="" class="cargo-country__link">грузы Атырау |</a>
-          <a href="" class="cargo-country__link">грузы Оскемен (Усть-Каменогорск) |</a>
-          <a href="" class="cargo-country__link">грузы Тараз |</a>
-          <a href="" class="cargo-country__link">грузы Уральск |</a>
-          <a href="" class="cargo-country__link">грузы Караганда |</a>
-          <a href="" class="cargo-country__link">грузы Костанай |</a>
-          <a href="" class="cargo-country__link">грузы Кызылорда |</a>
-          <a href="" class="cargo-country__link">грузы Актау |</a>
-          <a href="" class="cargo-country__link">грузы Павлодар |</a>
-          <a href="" class="cargo-country__link">грузы Петропавловск |</a>
-          <a href="" class="cargo-country__link">грузы Шымкент |</a>
-        </div>
-    </div>
-  </section>
   </main>
 
   <footer>

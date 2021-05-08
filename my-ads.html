@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мои данные</title>
+  <title>Мои объявления</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -132,7 +132,7 @@
             <a class="lk-nav-top__link" href="lk.html">Личный кабинет</a>
           </li>
           <li class="lk-nav-top__item">
-            <a class="lk-nav-top__link" href="lk-data.html">Мои данные</a>
+            <a class="lk-nav-top__link" href="my-ads.html">Мои объявления</a>
           </li>
         </ul>
       </div>
@@ -143,7 +143,7 @@
           <div class="lk-nav__box">
             <ul>
               <li class="lk-nav__box-item">
-                <a href="lk-data.html" class="lk-nav__box-link lk-nav__box-link_active">Мои данные</a>
+                <a href="lk-data.html" class="lk-nav__box-link">Мои данные</a>
               </li>
               <li class="lk-nav__box-item">
                 <a href="lk-chat.html" class="lk-nav__box-link">Чат</a>
@@ -155,7 +155,7 @@
                 <a href="lk-staff.html" class="lk-nav__box-link">Мои сотрудники</a>
               </li>
               <li class="lk-nav__box-item">
-                <a href="my-ads.html" class="lk-nav__box-link">Мои объявления</a>
+                <a href="my-ads.html" class="lk-nav__box-link lk-nav__box-link_active">Мои объявления</a>
               </li>
               <li class="lk-nav__box-item">
                 <a href="my-shop.html" class="lk-nav__box-link">Мои заведения</a>
@@ -163,147 +163,265 @@
             </ul>
           </div>
         </div>
-        <div class="lk__container-col lk-col__data">
-          <div class="lk-container__header">
-            <div class="lk-container__header_left">
-              <h4 class="lk__title">Данные:</h4>
-              <div class="lk__title-name">ТОО ЛОГИСТИК</div>
+        <div class="lk__container-col staff__col">
+          <div class="staff-container__header">
+            <h4 class="lk__title">Мои объявления</h4>
+            <a href="#" class="favorites-box__contact my-ads__btn">Добавить объявления</a>
+          </div>
+          <fieldset class="form__fieldset my-ads__fieldset">
+            <div class="form__block">
+              <div class="form__text">c
+                <input type="date" name="" id="" value="2022-04-21" class="form__date">
+              </div>
+              <div class="form__text">по
+                <input type="date" name="" id="" value="2022-04-21" class="form__date">
+              </div>
             </div>
-            <div class="lk-container__header_right">
-              <div class="lk-date__row">id:
-                <span>121352</span>
+          </fieldset>
+          <div class="my-ads__content">
+            <div class="my-ads__filter">
+              <button class="my-ads__filter-btn my-ads__filter-btn_active">Все</button>
+              <button class="my-ads__filter-btn">Грузы</button>
+              <button class="my-ads__filter-btn">Транспорт</button>
+              <button class="my-ads__filter-btn">Сервис</button>
+              <button class="my-ads__filter-btn">Запчасти</button>
+              <button class="my-ads__filter-btn">Услуги</button>
+            </div>
+            <div class="my-ads__row_max">
+              <div class="field__row">
+                <div class="field__theme">актуальные</div>
+                <div class="field__theme">архив</div>
               </div>
-              <div class="lk-date__row">Дата добавления:
-                <span>07.07.2020 г.</span>
+            </div>
+            <div class="cargo__card">
+              <div class="favorites__row favorites-box__row-date cargo-box__row-date">
+                <div class="cargo-item__row">
+                  <div class="cargo-box__date">
+                    <span>05.09.2020</span>
+                    -
+                    <span>15.09.2020</span>
+                  </div>
+                  <div class="cargo-box__name">
+                    ТОО Васильев
+                  </div>
+                </div>
+                <div class="favorites-item__row">
+                  <a href="" class="favorites-box__contact">Показать контакты</a>
+                  <div class="box__date-travel favorites-box__date-travel">
+                    01.09.2020
+                  </div>
+                  <div class="box__time-travel favorites-box__time-travel">
+                    19:30
+                  </div>
+                </div>
               </div>
+              <div class="favorites__row favorites-box__row-header">
+                <div class="cargo-item__row">
+                  <div class="favorites-box__city cargo-box__city-bg">
+                    Нур-Султан
+                  </div>
+                  <div class="favorites-box__city favorites-box__city-arrow">
+                    Новосибирск
+                  </div>
+                  <div class="favorites-box__city favorites-box__city-arrow">
+                    Москва
+                  </div>
+                </div>
+                <diw class="favorites-item__row">
+                  <div class="favorites-box__distance">
+                    2762 км
+                  </div>
+                  <div class="cargo-box__price favorites-box__price">
+                    от
+                    <span>
+                      50 000
+                    </span>
+                    тг.
+                  </div>
+                </diw>
+              </div>
+              <div class="favorites-box__row cargo-box__row-description">
+                <div class="cargo-box__description">
+                  Вес:
+                  <span>от 0.5 т   до 20 т</span>
+                </div>
+                <div class="cargo-box__description">
+                  Объем:
+                  <span>от 4 м<sup>3</sup>  до 90 м<sup>3</sup></span>
+                </div>
+                <div class="cargo-box__description">
+                  Тип транспорта:
+                  <span>крытая</span>
+                </div>
+                <div class="cargo-box__description">
+                  Вид погрузки:
+                  <span>задняя, верхняя, боковая</span>
+                </div>
+              </div>
+             <div class="ads-btn__row">
+                <button class="ads__btn ads__btn-edit">
+                  <span class="ads__btn-img ads__btn-img-edit"></span>
+                  Редактировать
+                </button>
+                <button class="ads__btn ads__btn-del">
+                  <span class="ads__btn-img ads__btn-img-del"></span>
+                  Удалить
+                </button>
+             </div>
+            </div>
+            <div class="cargo__card">
+              <div class="favorites__row favorites-box__row-date cargo-box__row-date">
+                <div class="cargo-item__row">
+                  <div class="cargo-box__date">
+                    <span>05.09.2020</span>
+                    -
+                    <span>15.09.2020</span>
+                  </div>
+                  <div class="cargo-box__name">
+                    ТОО Васильев
+                  </div>
+                </div>
+                <div class="favorites-item__row">
+                  <a href="" class="favorites-box__contact">Показать контакты</a>
+                  <div class="box__date-travel favorites-box__date-travel">
+                    01.09.2020
+                  </div>
+                  <div class="box__time-travel favorites-box__time-travel">
+                    19:30
+                  </div>
+                </div>
+              </div>
+              <div class="favorites__row favorites-box__row-header">
+                <div class="cargo-item__row">
+                  <div class="favorites-box__city cargo-box__city-bg">
+                    Нур-Султан
+                  </div>
+                  <div class="favorites-box__city favorites-box__city-arrow">
+                    Новосибирск
+                  </div>
+                  <div class="favorites-box__city favorites-box__city-arrow">
+                    Москва
+                  </div>
+                </div>
+                <diw class="favorites-item__row">
+                  <div class="favorites-box__distance">
+                    2762 км
+                  </div>
+                  <div class="cargo-box__price favorites-box__price">
+                    от
+                    <span>
+                      50 000
+                    </span>
+                    тг.
+                  </div>
+                </diw>
+              </div>
+              <div class="favorites-box__row cargo-box__row-description">
+                <div class="cargo-box__description">
+                  Вес:
+                  <span>от 0.5 т   до 20 т</span>
+                </div>
+                <div class="cargo-box__description">
+                  Объем:
+                  <span>от 4 м<sup>3</sup>  до 90 м<sup>3</sup></span>
+                </div>
+                <div class="cargo-box__description">
+                  Тип транспорта:
+                  <span>крытая</span>
+                </div>
+                <div class="cargo-box__description">
+                  Вид погрузки:
+                  <span>задняя, верхняя, боковая</span>
+                </div>
+              </div>
+             <div class="ads-btn__row">
+                <button class="ads__btn ads__btn-edit">
+                  <span class="ads__btn-img ads__btn-img-edit"></span>
+                  Редактировать
+                </button>
+                <button class="ads__btn ads__btn-del">
+                  <span class="ads__btn-img ads__btn-img-del"></span>
+                  Удалить
+                </button>
+             </div>
+            </div>
+            <div class="cargo__card">
+              <div class="favorites__row favorites-box__row-date cargo-box__row-date">
+                <div class="cargo-item__row">
+                  <div class="cargo-box__date">
+                    <span>05.09.2020</span>
+                    -
+                    <span>15.09.2020</span>
+                  </div>
+                  <div class="cargo-box__name">
+                    ТОО Васильев
+                  </div>
+                </div>
+                <div class="favorites-item__row">
+                  <a href="" class="favorites-box__contact">Показать контакты</a>
+                  <div class="box__date-travel favorites-box__date-travel">
+                    01.09.2020
+                  </div>
+                  <div class="box__time-travel favorites-box__time-travel">
+                    19:30
+                  </div>
+                </div>
+              </div>
+              <div class="favorites__row favorites-box__row-header">
+                <div class="cargo-item__row">
+                  <div class="favorites-box__city cargo-box__city-bg">
+                    Нур-Султан
+                  </div>
+                  <div class="favorites-box__city favorites-box__city-arrow">
+                    Новосибирск
+                  </div>
+                  <div class="favorites-box__city favorites-box__city-arrow">
+                    Москва
+                  </div>
+                </div>
+                <diw class="favorites-item__row">
+                  <div class="favorites-box__distance">
+                    2762 км
+                  </div>
+                  <div class="cargo-box__price favorites-box__price">
+                    от
+                    <span>
+                      50 000
+                    </span>
+                    тг.
+                  </div>
+                </diw>
+              </div>
+              <div class="favorites-box__row cargo-box__row-description">
+                <div class="cargo-box__description">
+                  Вес:
+                  <span>от 0.5 т   до 20 т</span>
+                </div>
+                <div class="cargo-box__description">
+                  Объем:
+                  <span>от 4 м<sup>3</sup>  до 90 м<sup>3</sup></span>
+                </div>
+                <div class="cargo-box__description">
+                  Тип транспорта:
+                  <span>крытая</span>
+                </div>
+                <div class="cargo-box__description">
+                  Вид погрузки:
+                  <span>задняя, верхняя, боковая</span>
+                </div>
+              </div>
+             <div class="ads-btn__row">
+                <button class="ads__btn ads__btn-edit">
+                  <span class="ads__btn-img ads__btn-img-edit"></span>
+                  Редактировать
+                </button>
+                <button class="ads__btn ads__btn-del">
+                  <span class="ads__btn-img ads__btn-img-del"></span>
+                  Удалить
+                </button>
+             </div>
             </div>
           </div>
-          <form action="" class="lk-data__form">
-            <h4 class="adding__title">Основные данные</h4>
-            <div class="adding-roadside__row">
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Имя</legend>
-                <div class="adding__input">
-                  <input type="text" name="" id="" value="Юрий" class="adding__input-text">
-                </div>
-              </fieldset>
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Фамилия</legend>
-                <div class="adding__input">
-                  <input type="text" name="" id="" value="Васильев" class="adding__input-text">
-                </div>
-              </fieldset>
-            </div>
-            <div class="adding-roadside__row lk-row__name">
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Наименование компании</legend>
-                <div class="adding__input">
-                  <input type="text" name="" id="" value="ТОО ЛОГИСТИК" class="adding__input-text">
-                </div>
-              </fieldset>
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Вид деятельности</legend>
-                <div class="adding__input">
-                  <input type="text" name="" id="" value="Транспортная компания" class="adding__input-text">
-                </div>
-              </fieldset>
-            </div>
-            <div class="adding-roadside__row_max lk-row__max">
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">E-mail</legend>
-                <div class="adding__input">
-                  <input type="mail" name="" id="" value="Iurii@test.kz" class="adding__input-text">
-                </div>
-              </fieldset>
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Телефон</legend>
-                <div class="adding__input">
-                  <input type="tel" name="" id="" value="+7 707 777 77 77" class="adding__input-text">
-                </div>
-              </fieldset>
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">ИИН или БИН*</legend>
-                <div class="adding__input">
-                  <input type="text" name="" id="" value="Введите ИИН или БИН*" class="adding__input-text">
-                </div>
-              </fieldset>
-            </div>
-            <h4 class="adding__title lk-company__title">Свидетельство регистрации компании</h4>
-            <div class="adding-group__photo-theme_row">
-              <div class="demo-img">
-                <span class="img-wrap">
-                  <img src="img/свидетельство.jpg" alt="">
-                </span>
-                <div class="file-name__row">
-                  <div class="file-name file-name__demo">photo.jpg</div>
-                  <span class="delete-link" title="Удалить">Удалить</span>
-                </div>
-              </div>
-              <label class="adding-image-lable">
-                <input type="file" id="addImages">
-                <div class="load-tab">Загрузить другой документ</div>
-              </label>
-            </div>
-            <p class="form-adding__text">
-              <span class="form-adding__text_red">* </span>
-              Ваши данные в безопасности и не будут переданы третьим лицам
-            </p>
-            <h4 class="adding__title lk-company__title">Дополнительные данные</h4>
-            <div class="adding-roadside__row">
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">WhatsApp</legend>
-                <div class="adding__input">
-                  <input type="tel" name="" id="" value="+7 707 777 77 77" class="adding__input-text">
-                </div>
-              </fieldset>
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Viber</legend>
-                <div class="adding__input">
-                  <input type="tel" name="" id="" value="+7 707 777 77 77" class="adding__input-text">
-                </div>
-              </fieldset>
-            </div>
-            <div class="adding-roadside__row lk-row__max">
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Skype</legend>
-                <div class="adding__input">
-                  <input type="tel" name="" id="" value="+7 707 777 77 77" class="adding__input-text">
-                </div>
-              </fieldset>
-              <fieldset class="adding__fieldset lk__fieldset">
-                <legend class="adding__legend">Zoom</legend>
-                <div class="adding__input">
-                  <input type="tel" name="" id="" value="+7 707 777 77 77" class="adding__input-text">
-                </div>
-              </fieldset>
-            </div>
-            <div class="lk-password">
-              <h4 class="adding__title">Пароль:</h4>
-              <input type="button" value="Изменить пароль" class="lk-password__btn">
-            </div>
-            <div class="adding-group__photo-theme_row">
-              <div class="demo-img">
-                <span class="img-wrap">
-                  <img src="img/photo-company.jpg" alt="">
-                </span>
-              </div>
-              <label class="adding-image-lable">
-                <input type="file" id="">
-                <div class="load-tab">Загрузить фото</div>
-              </label>
-            </div>
-            <div class="lk__comment">
-              <ul>
-                <li class="lk-cooment__item lk-cooment__item_all">Отзывы о моей компании: <span class="lk-comment__sum">7</span></li>
-                <li class="lk-cooment__item lk-cooment__item_like">Положительные: <span class="lk-comment__sum">5</span></li>
-                <li class="lk-cooment__item lk-cooment__item_dis">Отрицательные: <span class="lk-comment__sum">2</span></li>
-              </ul>
-            </div>
-            <div class="lk-btn__row">
-              <input type="button" value="Удалить профиль" class="lk__btn lk__btn-del">
-              <input type="button" value="Сохранить" class="lk__btn addition__btn-save">
-            </div>
-          </form>
         </div>
       </div>
     </section>
