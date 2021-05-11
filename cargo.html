@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Грузы</title>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -223,11 +224,11 @@
                 </div>
                 <div class="sorting__row-adaptive">
                   <div class="sorting__sort">Сортировка</div>
-                  <select name="" id="" class="sorting__select">
-                    <option value="">Сначала новые</option>
-                    <option value="">По возрастанию цены</option>
-                    <option value="">По убыванию цены</option>
-                  </select>
+                    <select name="" id="" class="sorting__select">
+                      <option value="">Сначала новые</option>
+                      <option value="">По возрастанию цены</option>
+                      <option value="">По убыванию цены</option>
+                    </select>
                 </div>
                 </div>
             </div>
@@ -840,6 +841,22 @@
         </div>
     </section>
   </footer>
+
+<script src="js/choices.min.js"></script>
+<script>
+  // const element = document.querySelector('.form__select');
+  const choices = new Choices('.form__select', {
+    searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+  });
+
+  new Choices('.sorting__select', {
+    searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+  });
+</script>
 
 </body>
 </html>

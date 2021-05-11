@@ -1820,7 +1820,25 @@ body {
   border: 1px solid #E0E0E0;
   border-radius: 4px 4px 0px 0px;
   appearance: none;
-  background: url('../img/cargo/appearense2.png') 90% center no-repeat;
+  /* background: url('../img/cargo/appearense2.png') 90% center no-repeat; */
+}
+
+.sorting__row-adaptive .choices__inner {
+  height: 60px;
+  border: 1px solid #E0E0E0;
+  background: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.sorting__row-adaptive .choices {
+  width: 192px;
+}
+
+.sorting__row-adaptive .choices[data-type*=select-one]:after {
+  margin-top: -12px;
+  height: 20px;
 }
 
 .sentence {
@@ -1906,7 +1924,7 @@ body {
 }
 
 .form__date {
-  max-width: 100px;
+  max-width: 95px;
   border: none;
 }
 
@@ -1945,13 +1963,52 @@ body {
   flex-direction: column;
 }
 
-.form__select {
+.choices {
+  width: 100%;
+}
+
+.choices__list--dropdown .choices__item {
+  padding: 20px;
+}
+
+.choices__item--choice {
+  height: 60px;
+}
+
+.choices[data-type*=select-one]:after  {
+  content: url('../img/cargo/appearense2.png');
+  width: 15px;
+  height: 15px;
+  right: 24px;
+  margin-top: -8px;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.choices[data-type*=select-one].is-open:after {
+  transform: rotate(180deg);
+}
+
+.choices__inner {
+  background-color: inherit;
+  border: none;
+}
+
+.choices__list--single {
+  padding-top: 10px;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+/* .form__select {
   padding-left: 19px;
   border: none;
   width: 78%;
   appearance: none;
   background: url('../img/cargo/appearense.png') right center no-repeat;
-}
+} */
 
 .cargo-form__select {
   width: 90%;
@@ -2110,11 +2167,24 @@ body {
     display: none;
   }
 
-  .sorting__select {
-    width: 130px;
-    padding: 8px;
-    margin-left: 10px;
+  .sorting__row-adaptive .choices__inner {
+    padding-left: 5px;
   }
+
+
+  .sorting__row-adaptive .choices {
+    width: 130px;
+    margin-left: 5px;
+  }
+
+  .sorting__row-adaptive .choices__list--dropdown .choices__item {
+    padding: 5px;
+  }
+
+  .sorting__row-adaptive .choices[data-type*=select-one]:after {
+    right: 8px;
+  }
+
 
   .sorting__row-adaptive {
     width: 100%;
