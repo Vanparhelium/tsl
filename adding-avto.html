@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Добавление транспорта</title>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -213,7 +214,7 @@
               <div class="form-adding__box">
                 <legend>Тип транспорта*</legend>
                 <div class="form-input__row form-input__row-transport">
-                  <select name="" id="" class="adding-form__select adding-form__select_max">
+                  <select name="" id="" class="adding-form__select_max">
                     <option value="" disabled selected>Выбрать</option>
                     <option value="">Тентованный</option>
                     <option value="">Рефрижератор</option>
@@ -478,6 +479,21 @@
         </div>
     </section>
   </footer>
+
+  <script src="js/choices.min.js"></script>
+  <script>
+    // const choices = new Choices('.form__select', {
+    //   searchEnabled: false,
+    //   itemSelectText: '',
+    //   shouldSort: false,
+    // });
+
+    new Choices('.adding-form__select_max', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+  </script>
 
 </body>
 
