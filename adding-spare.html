@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Добавление объявления о продаже запчастей</title>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -144,9 +145,10 @@
                 <div class="form-input__row form-input__row-add">
                   <select name="" id="" class="adding-form__select adding-form__select_max">
                     <option value="">Шины/диски</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="">Кузовные детали</option>
+                    <option value="">Фары</option>
+                    <option value="">Стекла</option>
+                    <option value="">Ходовая часть</option>
                   </select>
                   <div class="form-btn__dox form-btn__dox-add">
                     <input type="button" value="+" class="adding-service-form__btn">
@@ -380,6 +382,16 @@
         </div>
     </section>
   </footer>
+
+  <script src="js/choices.min.js"></script>
+  <script>
+
+    new Choices('.adding-form__select_max', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+  </script>
 
 </body>
 
