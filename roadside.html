@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Придорожный сервис</title>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -139,17 +140,28 @@
               </h4>
               <div class="filter__form_col">
                 <div class="filter__form_row">
-                  <fieldset class="form__fieldset">
-                      <legend class="form__legend">Город/Страна</legend>
-                      <div class="form__block form__block_pading">
-                        <input type="text" name="" id="" value="Весь Казахстан" class="form__type-text">
-                        <div class="form-btn__dox-city">
+                  <fieldset class="form__fieldset form__fieldset-city">
+                      <legend class="form__legend">Город</legend>
+                      <div class="form__block">
+                        <select name="" id="" class="form__select-city">
+                            <option value="">Алматы</option>
+                            <option value="">Нур-Султан</option>
+                            <option value="">Шымкент</option>
+                            <option value="">Актобе</option>
+                            <option value="">Тараз</option>
+                            <option value="">Караганда</option>
+                            <option value="">Павлодар</option>
+                            <option value="">Усть-Каменогорск</option>
+                            <option value="">Семей</option>
+                            <option value="">Атырау</option>
+                        </select>
+                        <div class="form-btn__dox form-btn__dox_first">
                           <input type="button" value="+" class="form__btn-add">
                         </div>
                       </div>
                   </fieldset>
                 </div>
-                <div class="filter__form_row">
+                <!-- <div class="filter__form_row">
                   <fieldset class="form__fieldset">
                       <legend class="form__legend">Ключевые слова</legend>
                       <div class="form__block form__block_pading">
@@ -157,7 +169,7 @@
                         <div class="form-btn__dox-city"><input type="button" value="+" class="form__btn-add"></div>
                       </div>
                   </fieldset>
-                </div>
+                </div> -->
                 <div class="filter__form_row">
                   <div class="filter__form_col form__service_col">
                     <fieldset class="form__fieldset">
@@ -167,6 +179,8 @@
                           <select name="" id="" class="form__select">
                             <option value="">Кафе</option>
                             <option value="">Гостиницы</option>
+                            <option value="">Паркинги</option>
+                            <option value="">Показать все</option>
                           </select>
                           <div class="form-btn__dox">
                             <input type="button" value="+" class="form__btn-add">
@@ -447,6 +461,27 @@
         </div>
     </section>
   </footer>
+
+  <script src="js/choices.min.js"></script>
+  <script>
+    const choices = new Choices('.form__select', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    // new Choices('.sorting__select', {
+    //   searchEnabled: false,
+    //   itemSelectText: '',
+    //   shouldSort: false,
+    // });
+
+    new Choices('.form__select-city', {
+      itemSelectText: '',
+      shouldSort: false,
+      noResultsText: 'Нет результатов',
+    });
+  </script>
 
 </body>
 </html>
