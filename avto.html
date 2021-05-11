@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Автотранспорт</title>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
@@ -189,12 +190,25 @@
               </h4>
               <div class="filter__form_col">
                 <div class="filter__form_row">
-                  <fieldset class="form__fieldset avto-fieldset">
-                      <legend class="form__legend">Город/Страна</legend>
-                      <div class="form__block form__block_pading">
-                        <input type="text" name="" id="" value="Весь Казахстан" class="form__type-text">
-                        <div class="form-btn__dox-city"><input type="button" value="+" class="form__btn-add"></div>
+                  <fieldset class="form__fieldset form__fieldset-city">
+                    <legend class="form__legend">Город</legend>
+                    <div class="form__block">
+                      <select name="" id="" class="form__select-city">
+                          <option value="">Алматы</option>
+                          <option value="">Нур-Султан</option>
+                          <option value="">Шымкент</option>
+                          <option value="">Актобе</option>
+                          <option value="">Тараз</option>
+                          <option value="">Караганда</option>
+                          <option value="">Павлодар</option>
+                          <option value="">Усть-Каменогорск</option>
+                          <option value="">Семей</option>
+                          <option value="">Атырау</option>
+                      </select>
+                      <div class="form-btn__dox form-btn__dox_first">
+                        <input type="button" value="+" class="form__btn-add">
                       </div>
+                    </div>
                   </fieldset>
                   <fieldset class="form__fieldset avto-fieldset">
                       <legend class="form__legend">Ключевые слова</legend>
@@ -210,6 +224,7 @@
                         <div class="form__block">
                           <select name="" id="" class="form__select">
                             <option value="">Новые</option>
+                            <option value="">Б/У</option>
                           </select>
                           <div class="form-btn__dox">
                             <input type="button" value="+" class="form__btn-add">
@@ -219,7 +234,7 @@
                   <fieldset class="form__fieldset avto-fieldset">
                     <legend class="form__legend">Марка автомобиля</legend>
                       <div class="form__block">
-                        <select name="" id="" class="form__select">
+                        <select name="" id="" class="form__select-avto">
                           <option value="">Выбрать</option>
                           <option value="">ВАЗ</option>
                         </select>
@@ -234,7 +249,7 @@
                     <legend class="form__legend">Тип</legend>
                     <div class="form__block-col">
                       <div class="form__block form__block_row">
-                        <select name="" id="" class="form__select">
+                        <select name="" id="" class="form__select-type">
                           <option value="">Выбрать</option>
                         </select>
                         <div class="form-btn__dox">
@@ -584,6 +599,33 @@
   },
 });
   </script>
+
+<script src="js/choices.min.js"></script>
+<script>
+  const choices = new Choices('.form__select', {
+    searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+  });
+
+  new Choices('.form__select-avto', {
+    searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+  });
+
+  new Choices('.form__select-type', {
+    searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+  });
+
+  new Choices('.form__select-city', {
+    itemSelectText: '',
+    shouldSort: false,
+    noResultsText: 'Нет результатов',
+  });
+</script>
 
 </body>
 </html>
