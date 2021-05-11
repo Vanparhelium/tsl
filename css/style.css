@@ -1929,11 +1929,8 @@ body {
 }
 
 input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-moz-inner-spin-button,
 input[type=date]::-webkit-outer-spin-button,
-input[type=date]::-moz-outer-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="date"]::-moz-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   appearance: none;
   -webkit-appearance: none;
