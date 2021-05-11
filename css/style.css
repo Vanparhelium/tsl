@@ -1940,8 +1940,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 input[type="date"] {
-  background: url('../img/calendar3.svg') right center no-repeat;
+  background: url('../img/calendar3.svg') right center no-repeat, #fff;
   background-size: contain;
+  padding-right: 5px;
 }
 
 .form__text {
@@ -1978,6 +1979,15 @@ input[type="date"] {
   display: flex;
   flex-direction: column;
 }
+
+#loc_0 ul {
+  display: none;
+}
+
+#loc_0 li:hover > ul {
+  display: block;
+}
+
 
 .choices {
   width: 100%;
