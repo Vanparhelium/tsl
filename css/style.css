@@ -1823,6 +1823,7 @@ body {
   /* background: url('../img/cargo/appearense2.png') 90% center no-repeat; */
 }
 
+.sorting__service_row .choices__inner,
 .sorting__row-adaptive .choices__inner {
   height: 60px;
   border: 1px solid #E0E0E0;
@@ -1832,6 +1833,7 @@ body {
   border-radius: 4px 4px 0px 0px;
 }
 
+.sorting__service_row .choices,
 .sorting__row-adaptive .choices {
   width: 192px;
 }
@@ -1921,6 +1923,13 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  word-break: keep-all;
+}
+
+.form__block .choices__item {
+  display: flex;
+  align-items: center;
+  word-break: keep-all;
 }
 
 .form__date {
@@ -1978,17 +1987,9 @@ input[type="date"] {
   flex-direction: column;
 }
 
-#loc_0 ul {
-  display: none;
-}
-
-#loc_0 li:hover > ul {
-  display: block;
-}
-
-
 .choices {
   width: 100%;
+  margin-bottom: 0;
 }
 
 .choices__list--dropdown .choices__item {
@@ -2021,14 +2022,6 @@ input[type="date"] {
 
 .choices__list--single {
   padding-top: 10px;
-}
-
-.form__fieldset-city .choices__list--single {
-  padding-top: 25px;
-}
-
-.form__fieldset-city .choices[data-type*=select-one]:after {
-  margin-top: 0;
 }
 
 .choices__placeholder {
@@ -2278,7 +2271,11 @@ input[type="date"] {
 }
 
 .sorting__service_row:first-child {
-  margin-right: 50px;
+  width: 40%;
+}
+
+.sorting__service-select {
+  display: block;
 }
 
 .sto__map-service {
@@ -2336,6 +2333,7 @@ input[type="date"] {
 
   .sorting__service_row:first-child {
     margin: 20px 0;
+    width: 100%;
   }
 
   .sorting__select {
@@ -2349,6 +2347,14 @@ input[type="date"] {
     background-position: 10px center;
   }
 }
+
+@media (max-width: 420px) {
+  .sorting__service_row:last-child {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 
 /* -----------------spare.html-style----------------------------- */
 
