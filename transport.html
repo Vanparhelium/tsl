@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Транспорт</title>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
@@ -151,18 +152,106 @@
                     </div>
                   </fieldset>
                   <div class="filter__form_row-form">
-                    <fieldset class="form__fieldset">
+                    <fieldset class="form__fieldset form__fieldset-city">
                       <legend class="form__legend">Откуда</legend>
-                      <div class="form__block form__block_pading">
-                        <input type="text" name="" id="" value="Алматы" class="form__type-text">
-                        <div class="form-btn__dox-city"><input type="button" value="+" class="form__btn-add"></div>
+                      <div class="form__block">
+                        <select name="" id="" class="form__select-city">
+                          <optgroup label="Казахстан">
+                            <option value="">Алматы</option>
+                            <option value="">Нур-Султан</option>
+                            <option value="">Акмолинская область</option>
+                            <option value="">Актюбинская область</option>
+                            <option value="">Алматинская область</option>
+                          </optgroup>
+                          <optgroup label="Россия">
+                            <option value="">Москва</option>
+                            <option value="">Мурманск</option>
+                            <option value="">Ростов-на-Дону</option>
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Сыктывкар</option>
+                            <option value="">Астрахань</option>
+                            <option value="">Барнаул</option>
+                            <option value="">Волгоград</option>
+                            <option value="">Воронеж</option>
+                            <option value="">Екатеренбург</option>
+                            <option value="">Ижевск</option>
+                            <option value="">Иркутск</option>
+                            <option value="">Казань</option>
+                            <option value="">Калининград</option>
+                            <option value="">Краснодар</option>
+                            <option value="">Красноярск</option>
+                            <option value="">Набережные Челны</option>
+                            <option value="">Нижний Новгород</option>
+                            <option value="">Новосибирск</option>
+                            <option value="">Омск</option>
+                            <option value="">Оренбург</option>
+                            <option value="">Пермь</option>
+                            <option value="">Самара</option>
+                            <option value="">Саратов</option>
+                            <option value="">Ставрополь</option>
+                            <option value="">Тольяти</option>
+                            <option value="">Тула</option>
+                            <option value="">Тюмень</option>
+                            <option value="">Ульяновск</option>
+                            <option value="">Уфа</option>
+                            <option value="">Челябинск</option>
+                            <option value="">Ярославль</option>
+                          </optgroup>
+                        </select>
+                        <div class="form-btn__dox form-btn__dox_first">
+                          <input type="button" value="+" class="form__btn-add">
+                        </div>
                       </div>
                     </fieldset>
-                    <fieldset class="form__fieldset">
+                    <fieldset class="form__fieldset form__fieldset-city">
                     <legend class="form__legend">Куда</legend>
-                    <div class="form__block form__block_pading">
-                      <input type="text" name="" id="" value="Алматы" class="form__type-text">
-                      <div class="form-btn__dox-city"><input type="button" value="+" class="form__btn-add"></div>
+                    <div class="form__block">
+                      <select name="" id="" class="form__select-in-city">
+                        <optgroup label="Казахстан">
+                          <option value="">Алматы</option>
+                          <option value="">Нур-Султан</option>
+                          <option value="">Акмолинская область</option>
+                          <option value="">Актюбинская область</option>
+                          <option value="">Алматинская область</option>
+                        </optgroup>
+                        <optgroup label="Россия">
+                          <option value="">Москва</option>
+                          <option value="">Мурманск</option>
+                          <option value="">Ростов-на-Дону</option>
+                          <option value="">Санкт-Петербург</option>
+                          <option value="">Сыктывкар</option>
+                          <option value="">Астрахань</option>
+                          <option value="">Барнаул</option>
+                          <option value="">Волгоград</option>
+                          <option value="">Воронеж</option>
+                          <option value="">Екатеренбург</option>
+                          <option value="">Ижевск</option>
+                          <option value="">Иркутск</option>
+                          <option value="">Казань</option>
+                          <option value="">Калининград</option>
+                          <option value="">Краснодар</option>
+                          <option value="">Красноярск</option>
+                          <option value="">Набережные Челны</option>
+                          <option value="">Нижний Новгород</option>
+                          <option value="">Новосибирск</option>
+                          <option value="">Омск</option>
+                          <option value="">Оренбург</option>
+                          <option value="">Пермь</option>
+                          <option value="">Самара</option>
+                          <option value="">Саратов</option>
+                          <option value="">Ставрополь</option>
+                          <option value="">Тольяти</option>
+                          <option value="">Тула</option>
+                          <option value="">Тюмень</option>
+                          <option value="">Ульяновск</option>
+                          <option value="">Уфа</option>
+                          <option value="">Челябинск</option>
+                          <option value="">Ярославль</option>
+                        </optgroup>
+                      </select>
+                      <div class="form-btn__dox form-btn__dox_first">
+                        <input type="button" value="+" class="form__btn-add">
+                      </div>
                     </div>
                     </fieldset>
                   </div>
@@ -173,10 +262,10 @@
                       <legend class="form__legend">Вес: тонна</legend>
                       <div class="form__block">
                         <div class="form__text">от
-                          <input type="number" name="" id="" value="" placeholder="10 000" class="form__date">
+                          <input type="number" name="" id="" value="" placeholder="1" class="form__date">
                         </div>
                         <div class="form__text">до
-                          <input type="number" name="" id="" value="" placeholder="100 000" class="form__date">
+                          <input type="number" name="" id="" value="" placeholder="100" class="form__date">
                         </div>
                       </div>
                     </fieldset>
@@ -184,10 +273,10 @@
                       <legend class="form__legend">Объем: м<sub>3</sub></legend>
                       <div class="form__block">
                         <div class="form__text">от
-                          <input type="number" name="" id="" value="" placeholder="10 000" class="form__date">
+                          <input type="number" name="" id="" value="" placeholder="10" class="form__date">
                         </div>
                         <div class="form__text">до
-                          <input type="number" name="" id="" value="" placeholder="100 000" class="form__date">
+                          <input type="number" name="" id="" value="" placeholder="150" class="form__date">
                         </div>
                       </div>
                     </fieldset>
@@ -197,28 +286,11 @@
                       <legend class="form__legend">Вид погрузки:</legend>
                       <div class="form__block-col">
                         <div class="form__block form__block_row">
-                          <select name="" id="" class="form__select">
+                          <select name="" id="" class="form__select cargo-form__select">
                             <option value="">Задняя</option>
-                          </select>
-                          <div class="form-btn__dox form-btn__dox_first">
-                            <input type="button" value="+" class="form__btn-add">
-                          </div>
-                        </div>
-                        <div class="form__block form__block_row">
-                          <select name="" id="" class="form__select">
                             <option value="">Боковая</option>
-                          </select>
-                         <div class="form-btn__dox">
-                           <input type="button" value="+" class="form__btn-add">
-                          </div>
-                        </div>
-                        <div class="form__block">
-                          <select name="" id="" class="form__select">
                             <option value="">Верхняя</option>
                           </select>
-                          <div class="form-btn__dox">
-                            <input type="button" value="+" class="form__btn-add">
-                          </div>
                         </div>
                       </div>
                     </fieldset>
@@ -241,6 +313,8 @@
                   <div class="sorting__sort">Сортировка</div>
                   <select name="" id="" class="sorting__select">
                     <option value="">Сначала новые</option>
+                    <option value="">По возрастанию цены</option>
+                    <option value="">По убыванию цены</option>
                   </select>
                 </div>
                 </div>
@@ -856,5 +930,30 @@
     </section>
   </footer>
 
+  <script src="js/choices.min.js"></script>
+  <script>
+    const choices = new Choices('.form__select', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    new Choices('.sorting__select', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    new Choices('.form__select-city', {
+      itemSelectText: '',
+      shouldSort: false,
+      noResultsText: 'Нет результатов',
+    });
+
+    new Choices('.form__select-in-city', {
+      itemSelectText: '',
+      shouldSort: false,
+    });
+  </script>
 </body>
 </html>
