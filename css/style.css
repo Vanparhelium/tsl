@@ -1931,12 +1931,14 @@ body {
 input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-outer-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
     -webkit-appearance: none;
     margin: 0;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-  background-image: url('../img/calendar3.svg');
+input[type="date"] {
+  background: url('../img/calendar3.svg') right center no-repeat;
+  background-size: contain;
 }
 
 .form__text {
