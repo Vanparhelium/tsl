@@ -152,18 +152,33 @@
                     </div>
                   </fieldset>
                   <div class="filter__form_row-form">
-                    <fieldset class="form__fieldset">
+                    <fieldset class="form__fieldset form__fieldset-city">
                       <legend class="form__legend">Откуда</legend>
-                      <div class="form__block form__block_pading">
-                        <input type="text" name="" id="" value="Алматы" class="form__type-text">
-                        <div class="form-btn__dox-city"><input type="button" value="+" class="form__btn-add"></div>
+                      <div class="form__block">
+                        <select name="" id="" class="form__select-city">
+                          <optgroup label="Россия">
+                            <option value="">Алматы</option>
+                            <option value="">Алматы</option>
+                          </optgroup>
+                          <optgroup label="Казахстан">
+                            <option value="">Алматы</option>
+                            <option value="">Алматы</option>
+                          </optgroup>
+                        </select>
+                        <div class="form-btn__dox form-btn__dox_first">
+                          <input type="button" value="+" class="form__btn-add">
+                        </div>
                       </div>
                     </fieldset>
-                    <fieldset class="form__fieldset">
+                    <fieldset class="form__fieldset form__fieldset-city">
                     <legend class="form__legend">Куда</legend>
-                    <div class="form__block form__block_pading">
-                      <input type="text" name="" id="" value="Алматы" class="form__type-text">
-                      <div class="form-btn__dox-city"><input type="button" value="+" class="form__btn-add"></div>
+                    <div class="form__block">
+                      <select name="" id="" class="form__select-in-city">
+                        <option value="">Алматы</option>
+                      </select>
+                      <div class="form-btn__dox form-btn__dox_first">
+                        <input type="button" value="+" class="form__btn-add">
+                      </div>
                     </div>
                     </fieldset>
                   </div>
@@ -174,10 +189,10 @@
                       <legend class="form__legend">Вес: тонна</legend>
                       <div class="form__block">
                         <div class="form__text">от
-                          <input type="number" name="" id="" value="" placeholder="10 000" class="form__date">
+                          <input type="number" name="" id="" value="" placeholder="1" class="form__date">
                         </div>
                         <div class="form__text">до
-                          <input type="number" name="" id="" value="" placeholder="100 000" class="form__date">
+                          <input type="number" name="" id="" value="" placeholder="100" class="form__date">
                         </div>
                       </div>
                     </fieldset>
@@ -853,6 +868,16 @@
 
   new Choices('.sorting__select', {
     searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+  });
+
+  new Choices('.form__select-city', {
+    itemSelectText: '',
+    shouldSort: false,
+  });
+
+  new Choices('.form__select-in-city', {
     itemSelectText: '',
     shouldSort: false,
   });
