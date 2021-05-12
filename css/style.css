@@ -1167,6 +1167,10 @@ body {
     top: 2%;
   }
 
+  .ads-popup__row {
+    margin-bottom: 15px;
+  }
+
   .header__right {
     margin-top: 10px;
     align-items: center;
