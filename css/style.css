@@ -1163,6 +1163,10 @@ body {
     padding: 10px;
   }
 
+  .staff-popup:target + .ads-popup {
+    top: 2%;
+  }
+
   .header__right {
     margin-top: 10px;
     align-items: center;
