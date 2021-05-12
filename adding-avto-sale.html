@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Продажа/аренда автотранспорта</title>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
 </head>
+
 <body>
 
   <header>
@@ -83,11 +86,11 @@
         </div>
       </div>
       <div class="header__bottom">
-        <nav  class="header__nav">
+        <nav class="header__nav">
           <ul id="menu" class="header__list ">
             <div class="header__nav_row">
               <li class="burger-nav__link">
-                <a href="cargo.html"  class="items__cargo">Грузы</a>
+                <a href="cargo.html" class="items__cargo">Грузы</a>
               </li>
               <li class="burger-nav__link">
                 <a href="transport.html" class="iten__transport">Транспорт</a>
@@ -119,383 +122,448 @@
     </div>
   </header>
 
-    <main>
-      <section class="main__baner main__baner-auto">
-        <div class="container">
-          <h2 class="main__baner-title">
-            Продажа/аренда автотранспорта
-          </h2>
-        </div>
-      </section>
-
-      <section class="adding-avto-sale__section">
-        <div class="container">
-          <div class="container-adding adding-avto-sale__container">
-            <form action="" class="form-adding">
-              <p class="form-adding__text">Поля, отмеченные
-                <span class="form-adding__text_red">*</span>
-                обязательны для заполнения</p>
-                <div class="form-adding__row form-adding__row-check_top">
-                  <div class="adding__checkbox">
-                    <input type="radio" name="add-avto" id="check-sale" checked>
-                    <label for="check-sale" class="checkbox__lable">Продажа</label>
-                  </div>
-                  <div class="adding__checkbox">
-                    <input type="radio" name="add-avto" id="check-rent">
-                    <label for="check-rent" class="checkbox__lable">Аренда</label>
-                  </div>
-                </div>
-                <div class="form-adding__row form-rent__row">
-                  <div class="form-adding__box">
-                    <legend>Категория*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                    <select name="" id="" class="adding-form__select adding-form__select_max" required>
-                      <option value="">Новое авто</option>
-                      <option value="" style="height: 60px;">Б/У</option>
-                    </select>
-                   </div>
-                  </div>
-                </div>
-                <div class="form-adding__row form-rent__row">
-                  <div class="form-adding__box">
-                    <legend>Марка АВТО*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                    <select name="" id="" class="adding-form__select adding-form__select_max" required>
-                      <option value="" disabled selected>Выбрать</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                   </div>
-                  </div>
-                  <div class="form-adding__box">
-                    <legend>Тип транспорта*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                    <select name="" id="" class="adding-form__select adding-form__select_max" required>
-                      <option value="" disabled selected>Выбрать</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                   </div>
-                  </div>
-                </div>
-                <div class="form-adding__row form-rent__row">
-                  <div class="form-adding__box">
-                    <legend>Модель*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                      <input type="text" name="" id="" placeholder="Начните вводить " class="adding-form__input">
-                   </div>
-                  </div>
-                  <div class="form-adding__box">
-                    <legend>Год выпуска</legend>
-                   <div class="form-input__row form-input__row-transport">
-                    <select name="" id="" class="adding-form__select adding-form__select_max" required>
-                      <option value="" disabled selected>Выбрать</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                   </div>
-                  </div>
-                </div>
-                <div class="form-adding__row form-rent__row">
-                  <div class="form-adding__box">
-                    <legend>Объем двигателя*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                      <input type="number" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
-                   </div>
-                  </div>
-                  <div class="form-adding__box">
-                    <legend>КПП*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                      <input type="text" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
-                   </div>
-                  </div>
-                </div>
-                <div class="form-adding__row form-rent__row">
-                  <div class="form-adding__box">
-                    <legend>Пробег*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                      <input type="number" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
-                   </div>
-                  </div>
-                  <div class="form-adding__box">
-                    <legend>Тип топлива*</legend>
-                   <div class="form-input__row form-input__row-transport">
-                      <input type="text" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
-                   </div>
-                  </div>
-                </div>
-                <p class="form-logo__text form-stock__text">Наличие*</p>
-              <div class="form-adding__row form-adding__row-check">
-                <div class="adding__checkbox">
-                  <input type="radio" name="stock" id="check-side" checked>
-                  <label for="check-side" class="checkbox__lable">Вналичии</label>
-                </div>
-                <div class="adding__checkbox">
-                  <input type="radio" name="stock" id="check-top">
-                  <label for="check-top" class="checkbox__lable">Под заказ</label>
-                </div>
-              </div>
-              <div class="form-adding__row form-rent__row">
-                <div class="form-adding__box">
-                  <legend>Стоимость*</legend>
-                 <div class="form-input__row form-input__row-transport">
-                    <input type="number" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
-                 </div>
-                </div>
-              </div>
-              <div class="form-adding__row form-rent__row">
-                <div class="form-adding__box form-adding__box-max">
-                  <legend>Описание</legend>
-                 <div class="form-input__row form-texteria__row">
-                    <textarea name="" id="" cols="300" rows="6" placeholder="Начните вводить" class="form__texteria"></textarea>
-                 </div>
-                </div>
-              </div>
-              <div class="form-adding__row form-rent__row">
-                <div class="form-adding__box form-adding__box-max">
-                  <legend>Фотографии</legend>
-                    <div class="adding-grup__photo">
-                      <div class="adding__photo">
-                        <div class="adding__photo-img"></div>
-                      </div>
-                      <div class="adding__photo">
-                        <output id="list"></output>
-                        <label class="adding__photo-label">
-                          <input type="file" name="photo" id="files" multiple accept="image/jpag, image/*">
-
-                          <div class="pluse"></div>
-                        </label>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <div class="form-adding__row form-rent__row">
-                <div class="form-adding__box">
-                  <legend>Страна*</legend>
-                 <div class="form-input__row form-input__row-transport">
-                  <select name="" id="" class="adding-form__select adding-form__select_max" required>
-                    <option value="" disabled selected>Выбрать</option>
-                    <option value="">Россия</option>
-                    <option value="">Казахстан</option>
-                    <option value=""></option>
-                  </select>
-                 </div>
-                </div>
-                <div class="form-adding__box">
-                  <legend>Город*</legend>
-                 <div class="form-input__row form-input__row-transport">
-                  <select name="" id="" class="adding-form__select adding-form__select_max" required>
-                    <option value="" disabled selected>Выбрать</option>
-                    <option value="">Алматы</option>
-                    <option value="">Нур-Султан</option>
-                    <option value="">Акмолинская область</option>
-                    <option value="">Актюбинская область</option>
-                    <option value="">Алматинская область</option>
-                  </select>
-                 </div>
-                </div>
-              </div>
-              <div class="form__company-card">
-                <p class="form-logo__text">Объявление от:</p>
-                <div class="logo-card__box">
-                  <div class="card__box">
-                    <img src="img/shutterstock.jpg" class="card__box-img">
-                    <div class="card-box__info">
-                      <div class="card-box__text">Транспортная компания</div>
-                      <div class="card-box__title">ТОО ЛОГИСТИК</div>
-                      <div class="card-box__name">Юрий Васильев</div>
-                      <a href="mailto:Iurii@test.kz" class="card-box__name">Iurii@test.kz</a>
-                      <a href="tel:+77077777777" class="card-box__name">+7 707 777 77 77</a>
-                    </div>
-                  </div>
-                  <div class="card__box">
-                    <img src="img/shutterstock.jpg" class="card__box-img">
-                    <div class="card-box__info">
-                      <div class="card-box__text">Транспортная компания</div>
-                      <div class="card-box__title">ТОО ЛОГИСТИК</div>
-                      <div class="card-box__name">Юрий Васильев</div>
-                      <a href="mailto:Iurii@test.kz" class="card-box__name">Iurii@test.kz</a>
-                      <a href="tel:+77077777777" class="card-box__name">+7 707 777 77 77</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-checkbox__col">
-                <div class="adding__checkbox">
-                  <input type="radio" name="check-day" id="check-free" checked>
-                  <label for="check-free" class="checkbox__lable">7 дней - бесплатно</label>
-                </div>
-                <div class="adding__checkbox">
-                  <input type="radio" name="check-day" id="check-seven">
-                  <label for="check-seven" class="checkbox__lable">7 дней выделение цветом -  400 тенге</label>
-                </div>
-                <div class="adding__checkbox">
-                  <input type="radio" name="check-day" id="check-month">
-                  <label for="check-month" class="checkbox__lable">30 дней выделение цветом -  1500 тенге</label>
-                </div>
-              </div>
-              <div class="form-bottom__info">
-                <p class="form-logo__text form-bottom__text">Информация по размещению рекламы на сайте:</p>
-                <div class="form-adding__row form-adding__row-botoom">
-                  <div class="form-adding__box">
-                   <div class="form-input__row">
-                      <input type="text" name="" id="" placeholder="Размер" class="adding-form__input">
-                   </div>
-                  </div>
-                  <div class="form-adding__box">
-                   <div class="form-input__row">
-                      <input type="text" name="" id="" placeholder="Стоимость" class="adding-form__input">
-                   </div>
-                  </div>
-                </div>
-                <div class="form-adding__row form-adding__row-botoom">
-                  <div class="form-adding__box form-adding__box-max">
-                   <div class="form-input__row">
-                      <input type="text" name="" id="" placeholder="Условия размещения" class="adding-form__input">
-                   </div>
-                  </div>
-                </div>
-                  <input type="button" value="Добавить объявление" class="adding__dtn">
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <section class="country-city">
-        <div class="cargo-country">
-          <h2 class="container__title cargo-country__container__title">Грузы по Казахстану</h2>
-          <div class="cargo-country__links">
-            <a href="" class="cargo-country__link">грузы Алматы |</a>
-            <a href="" class="cargo-country__link">грузы Астана |</a>
-            <a href="" class="cargo-country__link">грузы Актобе |</a>
-            <a href="" class="cargo-country__link">грузы Кокшетау |</a>
-            <a href="" class="cargo-country__link">грузы Талдыкорган |</a>
-            <a href="" class="cargo-country__link">грузы Атырау |</a>
-            <a href="" class="cargo-country__link">грузы Оскемен (Усть-Каменогорск) |</a>
-            <a href="" class="cargo-country__link">грузы Тараз |</a>
-            <a href="" class="cargo-country__link">грузы Уральск |</a>
-            <a href="" class="cargo-country__link">грузы Караганда |</a>
-            <a href="" class="cargo-country__link">грузы Костанай |</a>
-            <a href="" class="cargo-country__link">грузы Кызылорда |</a>
-            <a href="" class="cargo-country__link">грузы Актау |</a>
-            <a href="" class="cargo-country__link">грузы Павлодар |</a>
-            <a href="" class="cargo-country__link">грузы Петропавловск |</a>
-            <a href="" class="cargo-country__link">грузы Шымкент |</a>
-          </div>
+  <main>
+    <section class="main__baner main__baner-auto">
+      <div class="container">
+        <h2 class="main__baner-title">
+          Продажа/аренда автотранспорта
+        </h2>
       </div>
     </section>
 
-    </main>
-
-    <footer>
-      <section class="footer">
-        <div class="container container__footor">
-          <div class="footer__col">
-            <div class="footer__info">
-              <ul>
-                <li class="footer__info-item">
-                  <div class="footer__info-img info-img__marker"></div>
-                  <div class="footer__info-data">
-                    <span class="info-data__title">Адрес:</span>
-                    Казахстан Алматы ул.Грибоедова 74
-                  </div>
-                </li>
-                <li class="footer__info-item">
-                  <div class="footer__info-img info-img__phone"></div>
-                  <div class="footer__info-data">
-                    <span class="info-data__title">Телефон:</span>
-                    <a href="tel:87009788589" class="info-data__contact">8 700 978 85 89</a>
-                    <a href="tel:87273822394" class="info-data__contact">8 (727) 382 23 94</a>
-                  </div>
-                </li>
-                <li class="footer__info-item">
-                  <div class="footer__info-img info-img__mail"></div>
-                  <div class="footer__info-data">
-                    <span class="info-data__title">E-mail:</span>
-                    <a href="mailto:info@tsl.su" class="info-data__contact"></a>
-                    info@tsl.su
-                  </div>
-                </li>
-              </ul>
+    <section class="adding-avto-sale__section">
+      <div class="container">
+        <div class="container-adding adding-avto-sale__container">
+          <form action="" class="form-adding">
+            <p class="form-adding__text">Поля, отмеченные
+              <span class="form-adding__text_red">*</span>
+              обязательны для заполнения
+            </p>
+            <div class="form-adding__row form-adding__row-check_top">
+              <div class="adding__checkbox">
+                <input type="radio" name="add-avto" id="check-sale" checked>
+                <label for="check-sale" class="checkbox__lable">Продажа</label>
+              </div>
+              <div class="adding__checkbox">
+                <input type="radio" name="add-avto" id="check-rent">
+                <label for="check-rent" class="checkbox__lable">Аренда</label>
+              </div>
             </div>
-          </div>
-          <div class="footer__col footer__col_hidden">
-            <nav class="footer-nav">
-              <ul>
-                <li class="footer-nav__item">
-                  <a href="index.html" class="footer-nav__link footer-nav__link_bold">TSL.su</a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="" class="footer-nav__link">О нас</a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="" class="footer-nav__link">Служба поддержки</a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="" class="footer-nav__link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer__col">
-            <nav class="footer-services__nav">
-              <ul>
-                <li class="footer-services__item">
-                  <a href="transport.html" class="footer-services__link">Транспорт</a>
-                </li>
-                <li class="footer-services__item">
-                  <a href="cargo.html" class="footer-services__link">Грузы</a>
-                </li>
-                <li class="footer-services__item">
-                  <a href="service.html" class="footer-services__link">Сервис</a>
-                </li>
-                <li class="footer-services__item">
-                  <a href="spare.html" class="footer-services__link">Запчасти</a>
-                </li>
-                <li class="footer-services__item">
-                  <a href="sale-avto.html" class="footer-services__link">Продажа автотранспорта</a>
-                </li>
-                <li class="footer-services__item">
-                  <a href="roadside.html" class="footer-services__link">Придорожный сервис</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer__col footer__color_hidden">
-            <a href="counterparty.html" class="footer__links">Проверка контрагента</a>
-            <a href="rout.html" class="footer__links">Расстояния</a>
-            <a href="#popup-ads" class="add__ad">Добавить объявление</a>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box">
+                <legend>Категория*</legend>
+                <div class="form-input__row form-input__row-transport form__input_padding">
+                  <select name="" id="" class="adding-form__select adding-form__select_max" required>
+                    <option value="">Новое авто</option>
+                    <option value="" style="height: 60px;">Б/У</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box">
+                <legend>Марка АВТО*</legend>
+                <div class="form-input__row form-input__row-transport form__input_padding">
+                  <select name="" id="" class="adding-form__select-model" required>
+                    <option value="" disabled selected>Выбрать</option>
+                    <option value="">Volvo</option>
+                    <option value="">Skania</option>
+                    <option value="">Камаз</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-adding__box">
+                <legend>Тип транспорта*</legend>
+                <div class="form-input__row form-input__row-transport form__input_padding">
+                  <select name="" id="" class="adding-form__select-type" required>
+                    <option value="" disabled selected>Выбрать</option>
+                    <option value="">Тягач</option>
+                    <option value="">Грузовик</option>
+                    <option value="">Прицеп</option>
+                    <option value="">Автобус</option>
+                    <option value="">Микроавтобус</option>
+                    <option value="">Самосвал</option>
+                    <option value="">Спецтехника</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box">
+                <legend>Модель*</legend>
+                <div class="form-input__row form-input__row-transport">
+                  <input type="text" name="" id="" placeholder="Начните вводить " class="adding-form__input">
+                </div>
+              </div>
+              <div class="form-adding__box">
+                <legend>Год выпуска</legend>
+                <div class="form-input__row form-input__row-transport form__input_padding">
+                  <select name="" id="" class="adding-form__select-year" required>
+                    <option value="" disabled selected>Выбрать</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                    <option value="">2010</option>
+                    <option value="">2011</option>
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box">
+                <legend>Объем двигателя*</legend>
+                <div class="form-input__row form-input__row-transport">
+                  <input type="number" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
+                </div>
+              </div>
+              <div class="form-adding__box">
+                <legend>КПП*</legend>
+                <div class="form-input__row form-input__row-transport">
+                  <input type="text" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box">
+                <legend>Пробег*</legend>
+                <div class="form-input__row form-input__row-transport">
+                  <input type="number" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
+                </div>
+              </div>
+              <div class="form-adding__box">
+                <legend>Тип топлива*</legend>
+                <div class="form-input__row form-input__row-transport">
+                  <input type="text" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
+                </div>
+              </div>
+            </div>
+            <p class="form-logo__text form-stock__text">Наличие*</p>
+            <div class="form-adding__row form-adding__row-check">
+              <div class="adding__checkbox">
+                <input type="radio" name="stock" id="check-side" checked>
+                <label for="check-side" class="checkbox__lable">Вналичии</label>
+              </div>
+              <div class="adding__checkbox">
+                <input type="radio" name="stock" id="check-top">
+                <label for="check-top" class="checkbox__lable">Под заказ</label>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box">
+                <legend>Стоимость*</legend>
+                <div class="form-input__row form-input__row-transport">
+                  <input type="number" name="" id="" placeholder="Начните вводить " class="adding-form__input" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box form-adding__box-max">
+                <legend>Описание</legend>
+                <div class="form-input__row form-texteria__row">
+                  <textarea name="" id="" cols="300" rows="6" placeholder="Начните вводить"
+                    class="form__texteria"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box form-adding__box-max">
+                <legend>Фотографии</legend>
+                <div class="adding-grup__photo">
+                  <div class="adding__photo">
+                    <div class="adding__photo-img"></div>
+                  </div>
+                  <div class="adding__photo">
+                    <output id="list"></output>
+                    <label class="adding__photo-label">
+                      <input type="file" name="photo" id="files" multiple accept="image/jpag, image/*">
+
+                      <div class="pluse"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-adding__row form-rent__row">
+              <div class="form-adding__box">
+                <legend>Страна*</legend>
+                <div class="form-input__row form-input__row-transport form__input_padding">
+                  <select name="" id="" class="adding-form__select-country" required>
+                    <option value="" disabled selected>Выбрать</option>
+                    <option value="">Россия</option>
+                    <option value="">Казахстан</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-adding__box">
+                <legend>Город*</legend>
+                <div class="form-input__row form-input__row-transport form__input_padding">
+                  <select name="" id="" class="form__select-city" required>
+                    <option value="" disabled selected>Выбрать</option>
+                    <optgroup>
+                      <option value="">Алматы</option>
+                      <option value="">Нур-Султан</option>
+                      <option value="">Шымкент</option>
+                      <option value="">Актобе</option>
+                      <option value="">Тараз</option>
+                      <option value="">Караганда</option>
+                      <option value="">Павлодар</option>
+                      <option value="">Усть-Каменогорск</option>
+                      <option value="">Семей</option>
+                      <option value="">Атырау</option>
+                    </optgroup>
+                    <optgroup>
+                      <option value="">Москва</option>
+                      <option value="">Мурманск</option>
+                      <option value="">Ростов-на-Дону</option>
+                      <option value="">Санкт-Петербург</option>
+                      <option value="">Сыктывкар</option>
+                      <option value="">Астрахань</option>
+                      <option value="">Барнаул</option>
+                      <option value="">Волгоград</option>
+                      <option value="">Воронеж</option>
+                      <option value="">Екатеренбург</option>
+                      <option value="">Ижевск</option>
+                      <option value="">Иркутск</option>
+                      <option value="">Казань</option>
+                      <option value="">Калининград</option>
+                      <option value="">Краснодар</option>
+                      <option value="">Красноярск</option>
+                      <option value="">Набережные Челны</option>
+                      <option value="">Нижний Новгород</option>
+                      <option value="">Новосибирск</option>
+                      <option value="">Омск</option>
+                      <option value="">Оренбург</option>
+                      <option value="">Пермь</option>
+                      <option value="">Самара</option>
+                      <option value="">Саратов</option>
+                      <option value="">Ставрополь</option>
+                      <option value="">Тольяти</option>
+                      <option value="">Тула</option>
+                      <option value="">Тюмень</option>
+                      <option value="">Ульяновск</option>
+                      <option value="">Уфа</option>
+                      <option value="">Челябинск</option>
+                      <option value="">Ярославль</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form__company-card">
+              <p class="form-logo__text">Объявление от:</p>
+              <div class="logo-card__box">
+                <div class="card__box">
+                  <img src="img/shutterstock.jpg" class="card__box-img">
+                  <div class="card-box__info">
+                    <div class="card-box__text">Транспортная компания</div>
+                    <div class="card-box__title">ТОО ЛОГИСТИК</div>
+                    <div class="card-box__name">Юрий Васильев</div>
+                    <a href="mailto:Iurii@test.kz" class="card-box__name">Iurii@test.kz</a>
+                    <a href="tel:+77077777777" class="card-box__name">+7 707 777 77 77</a>
+                  </div>
+                </div>
+                <div class="card__box">
+                  <img src="img/shutterstock.jpg" class="card__box-img">
+                  <div class="card-box__info">
+                    <div class="card-box__text">Транспортная компания</div>
+                    <div class="card-box__title">ТОО ЛОГИСТИК</div>
+                    <div class="card-box__name">Юрий Васильев</div>
+                    <a href="mailto:Iurii@test.kz" class="card-box__name">Iurii@test.kz</a>
+                    <a href="tel:+77077777777" class="card-box__name">+7 707 777 77 77</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-checkbox__col">
+              <div class="adding__checkbox">
+                <input type="radio" name="check-day" id="check-free" checked>
+                <label for="check-free" class="checkbox__lable">7 дней - бесплатно</label>
+              </div>
+              <div class="adding__checkbox">
+                <input type="radio" name="check-day" id="check-seven">
+                <label for="check-seven" class="checkbox__lable">7 дней выделение цветом - 400 тенге</label>
+              </div>
+              <div class="adding__checkbox">
+                <input type="radio" name="check-day" id="check-month">
+                <label for="check-month" class="checkbox__lable">30 дней выделение цветом - 1500 тенге</label>
+              </div>
+            </div>
+            <div class="form-bottom__info">
+              <p class="form-logo__text form-bottom__text">Информация по размещению рекламы на сайте:</p>
+              <div class="form-adding__row form-adding__row-botoom">
+                <div class="form-adding__box">
+                  <div class="form-input__row">
+                    <input type="text" name="" id="" placeholder="Размер" class="adding-form__input">
+                  </div>
+                </div>
+                <div class="form-adding__box">
+                  <div class="form-input__row">
+                    <input type="text" name="" id="" placeholder="Стоимость" class="adding-form__input">
+                  </div>
+                </div>
+              </div>
+              <div class="form-adding__row form-adding__row-botoom">
+                <div class="form-adding__box form-adding__box-max">
+                  <div class="form-input__row">
+                    <input type="text" name="" id="" placeholder="Условия размещения" class="adding-form__input">
+                  </div>
+                </div>
+              </div>
+              <input type="button" value="Добавить объявление" class="adding__dtn">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-city">
+      <div class="cargo-country">
+        <h2 class="container__title cargo-country__container__title">Грузы по Казахстану</h2>
+        <div class="cargo-country__links">
+          <a href="" class="cargo-country__link">грузы Алматы |</a>
+          <a href="" class="cargo-country__link">грузы Астана |</a>
+          <a href="" class="cargo-country__link">грузы Актобе |</a>
+          <a href="" class="cargo-country__link">грузы Кокшетау |</a>
+          <a href="" class="cargo-country__link">грузы Талдыкорган |</a>
+          <a href="" class="cargo-country__link">грузы Атырау |</a>
+          <a href="" class="cargo-country__link">грузы Оскемен (Усть-Каменогорск) |</a>
+          <a href="" class="cargo-country__link">грузы Тараз |</a>
+          <a href="" class="cargo-country__link">грузы Уральск |</a>
+          <a href="" class="cargo-country__link">грузы Караганда |</a>
+          <a href="" class="cargo-country__link">грузы Костанай |</a>
+          <a href="" class="cargo-country__link">грузы Кызылорда |</a>
+          <a href="" class="cargo-country__link">грузы Актау |</a>
+          <a href="" class="cargo-country__link">грузы Павлодар |</a>
+          <a href="" class="cargo-country__link">грузы Петропавловск |</a>
+          <a href="" class="cargo-country__link">грузы Шымкент |</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="footer">
+      <div class="container container__footor">
+        <div class="footer__col">
+          <div class="footer__info">
+            <ul>
+              <li class="footer__info-item">
+                <div class="footer__info-img info-img__marker"></div>
+                <div class="footer__info-data">
+                  <span class="info-data__title">Адрес:</span>
+                  Казахстан Алматы ул.Грибоедова 74
+                </div>
+              </li>
+              <li class="footer__info-item">
+                <div class="footer__info-img info-img__phone"></div>
+                <div class="footer__info-data">
+                  <span class="info-data__title">Телефон:</span>
+                  <a href="tel:87009788589" class="info-data__contact">8 700 978 85 89</a>
+                  <a href="tel:87273822394" class="info-data__contact">8 (727) 382 23 94</a>
+                </div>
+              </li>
+              <li class="footer__info-item">
+                <div class="footer__info-img info-img__mail"></div>
+                <div class="footer__info-data">
+                  <span class="info-data__title">E-mail:</span>
+                  <a href="mailto:info@tsl.su" class="info-data__contact"></a>
+                  info@tsl.su
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div class="footer__col footer__col_hidden">
+          <nav class="footer-nav">
+            <ul>
+              <li class="footer-nav__item">
+                <a href="index.html" class="footer-nav__link footer-nav__link_bold">TSL.su</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">Служба поддержки</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <nav class="footer-services__nav">
+            <ul>
+              <li class="footer-services__item">
+                <a href="transport.html" class="footer-services__link">Транспорт</a>
+              </li>
+              <li class="footer-services__item">
+                <a href="cargo.html" class="footer-services__link">Грузы</a>
+              </li>
+              <li class="footer-services__item">
+                <a href="service.html" class="footer-services__link">Сервис</a>
+              </li>
+              <li class="footer-services__item">
+                <a href="spare.html" class="footer-services__link">Запчасти</a>
+              </li>
+              <li class="footer-services__item">
+                <a href="sale-avto.html" class="footer-services__link">Продажа автотранспорта</a>
+              </li>
+              <li class="footer-services__item">
+                <a href="roadside.html" class="footer-services__link">Придорожный сервис</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__color_hidden">
+          <a href="counterparty.html" class="footer__links">Проверка контрагента</a>
+          <a href="rout.html" class="footer__links">Расстояния</a>
+          <a href="#popup-ads" class="add__ad">Добавить объявление</a>
+        </div>
+      </div>
+    </section>
 
-      <section class="footer__copiright">
-          <div class="container copiright__container">
-            <div class="footer__copiright_row">
-              <a href="index.html" class="header__logo">TSL.su</a>
-              <div class="header__title title__footer">Международный маркетплейс грузоперевозок и сервиса №1</div>
-            </div>
-           <div class="footer__copiright_row">
-              <div class="footer__circs">
-                <a href="" class="circs__link circs__link_block">Все права защищены 2021</a>
-                <a href="" class="circs__link">Политика конфиденциальности</a>
-                <a href="" class="circs__link">Персональные данные</a>
-              </div>
-              <div class="footer__logo">
-                <img src="img/logo.png" alt="Разработано компанией GRAD media group" class="footer__logo-img">
-              </div>
-           </div>
+    <section class="footer__copiright">
+      <div class="container copiright__container">
+        <div class="footer__copiright_row">
+          <a href="index.html" class="header__logo">TSL.su</a>
+          <div class="header__title title__footer">Международный маркетплейс грузоперевозок и сервиса №1</div>
+        </div>
+        <div class="footer__copiright_row">
+          <div class="footer__circs">
+            <a href="" class="circs__link circs__link_block">Все права защищены 2021</a>
+            <a href="" class="circs__link">Политика конфиденциальности</a>
+            <a href="" class="circs__link">Персональные данные</a>
           </div>
-      </section>
-    </footer>
-<script>
-      // load photo file
-      function handleFileSelect(evt) {
+          <div class="footer__logo">
+            <img src="img/logo.png" alt="Разработано компанией GRAD media group" class="footer__logo-img">
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script>
+    // load photo file
+    function handleFileSelect(evt) {
       var files = evt.target.files; // FileList object
 
       // Loop through the FileList and render image files as thumbnails.
@@ -509,12 +577,12 @@
         var reader = new FileReader();
 
         // Closure to capture the file information.
-        reader.onload = (function(theFile) {
-          return function(e) {
+        reader.onload = (function (theFile) {
+          return function (e) {
             // Render thumbnail.
             var span = document.createElement('span');
             span.innerHTML = ['<img class="adding__photo-img_new" src="', e.target.result,
-                              '" title="', theFile.name, '"/>'].join('');
+              '" title="', theFile.name, '"/>'].join('');
             document.getElementById('list').insertBefore(span, null);
           };
         })(f);
@@ -524,7 +592,48 @@
       }
     }
 
-  document.getElementById('files').addEventListener('change', handleFileSelect, false);
-</script>
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+  </script>
+
+  <script src="js/choices.min.js"></script>
+  <script>
+    const choices = new Choices('.adding-form__select', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    new Choices('.adding-form__select-model', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    new Choices('.adding-form__select-type', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    new Choices('.adding-form__select-year', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    new Choices('.adding-form__select-country', {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    new Choices('.form__select-city', {
+      itemSelectText: '',
+      shouldSort: false,
+      noResultsText: 'Нет результатов',
+    });
+  </script>
+
 </body>
+
 </html>

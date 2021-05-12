@@ -1388,6 +1388,25 @@ body {
     display: none;
   }
 
+  .ads-popup {
+    width: 350px;
+    height: 400px;
+  }
+
+  .ads-popup__container {
+    padding-top: 20px;
+  }
+
+  .ads-popup__row {
+    justify-content: space-between;
+  }
+
+  .ads-popup__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
   .hero__title {
     margin-top: 150px;
     font-size: 28px;
@@ -1479,24 +1498,7 @@ body {
     transform: translate(-55%, 0);
   }
 
-  .ads-popup {
-    width: 350px;
-    height: 400px;
-  }
 
-  .ads-popup__container {
-    padding-top: 20px;
-  }
-
-  .ads-popup__row {
-    justify-content: space-between;
-  }
-
-  .ads-popup__title {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 20px;
-  }
 
   /* header   */
   .header__logo-img {
@@ -3803,8 +3805,8 @@ input[type="date"] {
 }
 
 .form-btn__dox-add {
-  padding: 0;
-  margin-left: 19px;
+  padding: 0 17px 0 0;
+  /* margin-left: 19px; */
 }
 
 .adding-form__title {
@@ -3818,6 +3820,21 @@ input[type="date"] {
   padding: 20px;
   font-size: 14px;
   line-height: 17px;
+}
+
+.form__input_padding {
+  padding: 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black);
+}
+
+.form__input_padding .choices__inner {
+  padding-left: 16px;
+}
+
+.form__input_padding .choices__list--single {
+  padding-top: 5px;
 }
 
 .adding-form__title-texteria {
