@@ -1189,11 +1189,11 @@ body {
   }
 
   .ads-popup__title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .ads-popup__container {
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   /*container menu */
@@ -1304,8 +1304,8 @@ body {
 
   .ads-popup {
     padding: 20px;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 350px;
   }
 
   .ads-popup__title {
