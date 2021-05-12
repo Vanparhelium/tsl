@@ -1141,6 +1141,20 @@ body {
 }
 
 /* ----------------------------adaptive--------------------------------------- */
+@media (max-width: 1600px) {
+  .ads-popup {
+    height: 550px;
+  }
+
+  .ads-popup__container {
+    padding-top: 35px;
+  }
+
+  .ads-popup__title {
+    margin-bottom: 45px;
+  }
+}
+
 
 @media (max-width: 1200px) {
   /* header */
